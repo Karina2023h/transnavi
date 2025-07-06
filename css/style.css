@@ -321,11 +321,13 @@ body::before {
   text-decoration: none;
   transition: color 0.3s;
   font-size: 16px !important;
+  transition: transform 0.3s, color 0.3s;
 
 }
 
 .footer-column ul li a:hover {
   color: #000;
+  transform: scale(1.3);
 }
 
 .footer-column p {
@@ -336,14 +338,14 @@ body::before {
 
 .social-icons a {
   display: inline-block;
-  margin-right: 10px;
-  font-size: 21px;
+  margin-right: 20px;
+  font-size: 28px;
 
   color: #ffffff;
   transition: transform 0.3s, color 0.3s;
 }
 
 .social-icons a:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
   color: #000;
 }
