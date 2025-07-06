@@ -5,9 +5,2462 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./img/Fauget.png" alt="Логотип" />
+      </a>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html">MAPS SHOP</a>
+      <a href="#">OUR PROJECTS</a>
+      <a href="mission.html">OUR MISSION</a>
+      <div class="dropdown">
+        <a href="aboud.html" class="dropdown-toggle">ABOUT US</a>
+        <div class="dropdown-menu">
+          <a href="#">Areas of activity</a>
+          <a href="#">Competitive advantages</a>
+        </div>
+      </div>
+      <a href="#">CONTACT</a>
+    </nav>
+    <div class="search-icon">
+      <i class="fas fa-search"></i>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="./hero-video/Дизайн без назви.mp4" type="video/mp4" />
+      Ваш браузер не підтримує відео.
+    </video>
+  </section>
+  <section class="intro-section">
+
+    <h1>Welcome to Transnavicom, the online store of digital maps.</h1>
+
+    <p>Here you can buy digital maps of 257 countries and over 600 000 cities and towns. We offer only the best maps for
+      you. All the data is up-to-date and clearly structured, licensed, and prepared for commercial use. In addition to
+      creating maps with the help of our numerous staff all around the world, we cooperate with all the reputed local
+      map
+      providers. This way, we offer you:</p>
+
+    <ul class="benefits-list">
+      <li><strong>Premium quality maps:</strong> level of details in the cities is down to every address and every
+        driving
+        maneuver;</li>
+      <li><strong>The best price:</strong> guaranteed 30-50% lower than any existing price of any other provider;</li>
+      <li><strong>Fast and convenient purchase</strong> of any map of any territory in the world.</li>
+    </ul>
+
+    <p>We are interested in long-term cooperation with our clients, so you will always receive regular updates of the
+      maps
+      you buy. We are also looking to establish new partnerships. On the occasion of opening of this online store, we
+      have
+      prepared numerous special offers, gifts and surprises. Enjoy the quality and incredible accuracy of modern digital
+      maps right now!</p>
+
+    <p>Please see the list of Transnavicom’s digital maps and the price of data in ArcGis and MapInfo formats. We are
+      always flexible about pricing and will be ready to offer special terms.</p>
+
+    <p class="promo-price"><strong>Promo price:</strong> just <span>$1000</span> for the map of any city!</p>
+
+    <p><small>*Final price depends on the amount of data purchased and the license for the use of the data (personal,
+        corporate, or Web license). Detailed information is available upon request.</small></p>
+  </section>
+
+  <section class="maps-section">
+    <h2 class="section-title">List of digital maps</h2>
+
+    <div class="table-container">
+      <table class="maps-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Local short and formal Name</th>
+            <th>Capital</th>
+            <th>Population</th>
+            <th>Area, sq km</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#" class="link">Ukraine</a></td>
+            <td><a href="#" class="link">Ukrainian: Украïна, Украина, Ukraine</a></td>
+            <td><a href="#" class="link">Київ, Киев, Kiev, Kyiv</a></td>
+            <td>44291413</td>
+            <td>603550</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Russia</a></td>
+            <td><a href="#" class="link">Russian: Россия — Российская Федерация</a></td>
+            <td><a href="#" class="link">Moscow, Москва</a></td>
+            <td>142517670</td>
+            <td>17098242</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Kazakhstan</a></td>
+            <td><a href="#" class="link">Kazakh: Қазақстан, Russian: Казахстан</a></td>
+            <td><a href="#" class="link">Astana, Астана</a></td>
+            <td>17522010</td>
+            <td>2724900</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Georgia</a></td>
+            <td><a href="#" class="link">Georgian: საქართველო, Грузия</a></td>
+            <td><a href="#" class="link">Tbilisi, T'bilisi, თბილისი, Тбилиси</a></td>
+            <td>4935880</td>
+            <td>69700</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Moldova</a></td>
+            <td><a href="#" class="link">Romanian: Moldova — Republica Moldova, Молдова</a></td>
+            <td><a href="#" class="link">Chișinău, Кишинёв</a></td>
+            <td>3583288</td>
+            <td>33851</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Azerbaijan</a></td>
+            <td><a href="#" class="link">Azerbaijani: Azǝrbaycan — Azǝrbaycan Respublikası</a></td>
+            <td><a href="#" class="link">Baku, Bakı</a></td>
+            <td>9493600</td>
+            <td>86600</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Philippines</a></td>
+            <td><a href="#" class="link">English: Philippines, Tagalog: Pilipinas</a></td>
+            <td><a href="#" class="link">Manila, Maynila</a></td>
+            <td>103775002</td>
+            <td>299812</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Albania</a></td>
+            <td><a href="#" class="link">Albanian: Shqipëri / Shqipëria — Republika e Shqipërisë</a></td>
+            <td><a href="#" class="link">Tirana, Tiranë</a></td>
+            <td>3020209</td>
+            <td>28748</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Andorra</a></td>
+            <td><a href="#" class="link">Catalan: Andorra — Principat d'Andorra</a></td>
+            <td><a href="#" class="link">Andorra la Vella</a></td>
+            <td>85458</td>
+            <td>468</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Austria</a></td>
+            <td><a href="#" class="link">German: Österreich — Republik Österreich</a></td>
+            <td><a href="#" class="link">Vienna, Wien</a></td>
+            <td>8223062</td>
+            <td>83871</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Belarus</a></td>
+            <td><a href="#" class="link">Belarusian: Беларусь — Рэспубліка Беларусь</a></td>
+            <td><a href="#" class="link">Minsk, Минск</a></td>
+            <td>9608058</td>
+            <td>207600</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Belgium</a></td>
+            <td><a href="#" class="link">German: Belgien — Königreich Belgien</a></td>
+            <td><a href="#" class="link">Brussels, Brüssel, Bruxelles</a></td>
+            <td>10449361</td>
+            <td>30528</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Bosnia and Herzegovina</a></td>
+            <td><a href="#" class="link">Bosna i Hercegovina, Босна и Херцеговина</a></td>
+            <td><a href="#" class="link">Sarajevo, Сарајево</a></td>
+            <td>3871643</td>
+            <td>51197</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Bulgaria</a></td>
+            <td><a href="#" class="link">Bulgarian: България — Република България</a></td>
+            <td><a href="#" class="link">Sofia, София</a></td>
+            <td>6924716</td>
+            <td>110879</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Croatia</a></td>
+            <td><a href="#" class="link">Croatian: Hrvatska — Republika Hrvatska</a></td>
+            <td><a href="#" class="link">Zagreb</a></td>
+            <td>4470534</td>
+            <td>56594</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Czech Republic</a></td>
+            <td><a href="#" class="link">Czech: Česko — Česká republika</a></td>
+            <td><a href="#" class="link">Prague, Praha</a></td>
+            <td>10627448</td>
+            <td>78867</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Denmark</a></td>
+            <td><a href="#" class="link">Danish: Danmark — Kongeriget Danmark</a></td>
+            <td><a href="#" class="link">Copenhagen, København</a></td>
+            <td>5569077</td>
+            <td>43094</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Estonia</a></td>
+            <td><a href="#" class="link">Estonian: Eesti — Eesti Vabariik</a></td>
+            <td><a href="#" class="link">Tallinn</a></td>
+            <td>1257921</td>
+            <td>45228</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Finland</a></td>
+            <td><a href="#" class="link">Finnish: Suomi — Suomen tasavalta, Swedish: Finland</a></td>
+            <td><a href="#" class="link">Helsinki, Helsingfors</a></td>
+            <td>5268799</td>
+            <td>338145</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">France</a></td>
+            <td><a href="#" class="link">French: France — République française</a></td>
+            <td><a href="#" class="link">Paris</a></td>
+            <td>66259012</td>
+            <td>643427</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Germany</a></td>
+            <td><a href="#" class="link">German: Deutschland — Bundesrepublik Deutschland</a></td>
+            <td><a href="#" class="link">Berlin</a></td>
+            <td>80996685</td>
+            <td>357022</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Greece</a></td>
+            <td><a href="#" class="link">Greek: Ελλάς — Ελληνική Δημοκρατία</a></td>
+            <td><a href="#" class="link">Athens, Αθήνα</a></td>
+            <td>10775557</td>
+            <td>131957</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Cyprus</a></td>
+            <td><a href="#" class="link">Greek: Κύπρος — Κυπριακή Δημοκρατία</a></td>
+            <td><a href="#" class="link">Nicosia, Λευκωσία (Lefkosia), Lefkoşa</a></td>
+            <td>1138071</td>
+            <td>9251</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Hungary</a></td>
+            <td><a href="#" class="link">Hungarian: Magyarország</a></td>
+            <td><a href="#" class="link">Budapest</a></td>
+            <td>9919128</td>
+            <td>93028</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Iceland</a></td>
+            <td><a href="#" class="link">Icelandic: Ísland — Lýðveldið Ísland</a></td>
+            <td><a href="#" class="link">Reykjavík</a></td>
+            <td>317351</td>
+            <td>103000</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Ireland</a></td>
+            <td><a href="#" class="link">English: Ireland, Irish: Éire</a></td>
+            <td><a href="#" class="link">Dublin, Baile Átha Cliath</a></td>
+            <td>4832765</td>
+            <td>70273</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">United Kingdom</a></td>
+            <td><a href="#" class="link">United Kingdom of Great Britain and Northern Ireland, U.K.</a></td>
+            <td><a href="#" class="link">London</a></td>
+            <td>65110891</td>
+            <td>242495</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Northern Ireland</a></td>
+            <td><a href="#" class="link">English: Northern Ireland</a></td>
+            <td><a href="#" class="link">Belfast</a></td>
+            <td>1864000</td>
+            <td>14130</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Wales</a></td>
+            <td><a href="#" class="link">English: Wales Cymru</a></td>
+            <td><a href="#" class="link">Cardiff, Caerdydd</a></td>
+            <td>3063456</td>
+            <td>20779</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Scotland</a></td>
+            <td><a href="#" class="link">English: Scotland</a></td>
+            <td><a href="#" class="link">Edinburgh</a></td>
+            <td>5373109</td>
+            <td>77933</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">England</a></td>
+            <td><a href="#" class="link">English: England</a></td>
+            <td><a href="#" class="link">London</a></td>
+            <td>54786300</td>
+            <td>130279</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Isle of Man</a></td>
+            <td><a href="#" class="link">English: Isle of Man, Mannin</a></td>
+            <td><a href="#" class="link">Douglas, Doolish</a></td>
+            <td>86866</td>
+            <td>572</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Channel Islands</a></td>
+            <td><a href="#" class="link">îles Anglo-Normandes, îles de la Manche</a></td>
+            <td><a href="#" class="link">Saint Peter Port</a></td>
+            <td>163857</td>
+            <td>118</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Italy</a></td>
+            <td><a href="#" class="link">Italian: Italia — Repubblica Italiana</a></td>
+            <td><a href="#" class="link">Rome, Roma</a></td>
+            <td>61680122</td>
+            <td>301340</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Latvia</a></td>
+            <td><a href="#" class="link">Latvian: Latvija — Latvijas Republika</a></td>
+            <td><a href="#" class="link">Riga, Rīga</a></td>
+            <td>2165165</td>
+            <td>64589</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Liechtenstein</a></td>
+            <td><a href="#" class="link">German: Liechtenstein — Fürstentum Liechtenstein</a></td>
+            <td><a href="#" class="link">Vaduz</a></td>
+            <td>37313</td>
+            <td>160</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Lithuania</a></td>
+            <td><a href="#" class="link">Lithuanian: Lietuva — Lietuvos Respublika</a></td>
+            <td><a href="#" class="link">Vilnius</a></td>
+            <td>3505738</td>
+            <td>65300</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Luxembourg</a></td>
+            <td><a href="#" class="link">German: Luxemburg, French: Luxembourg, Luxembourgish: Lëtzebuerg</a></td>
+            <td><a href="#" class="link">Luxemburg, Luxembourg, Lëtzebuerg</a></td>
+            <td>520672</td>
+            <td>2586</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Macedonia</a></td>
+            <td><a href="#" class="link">Macedonian: Македонија — Република Македонија</a></td>
+            <td><a href="#" class="link">Skopje, Скопје</a></td>
+            <td>2069162</td>
+            <td>25713</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Malta</a></td>
+            <td><a href="#" class="link">English: Malta — Republic of Malta</a></td>
+            <td><a href="#" class="link">Valletta</a></td>
+            <td>412655</td>
+            <td>317</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Monaco</a></td>
+            <td><a href="#" class="link">French: Monaco — Principauté de Monaco</a></td>
+            <td><a href="#" class="link">Monaco</a></td>
+            <td>30508</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Montenegro</a></td>
+            <td><a href="#" class="link">Montenegrin: Црна Гора</a></td>
+            <td><a href="#" class="link">Podgorica, Подгорица, Цетиње</a></td>
+            <td>650036</td>
+            <td>13812</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Netherlands</a></td>
+            <td><a href="#" class="link">Dutch: Nederland — Koninkrijk der Nederlanden</a></td>
+            <td><a href="#" class="link">Amsterdam, The Hague, 's-Gravenhage, Den Haag</a></td>
+            <td>16877351</td>
+            <td>41543</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Norway</a></td>
+            <td><a href="#" class="link">Bokmål: Norge — Kongeriket Norge</a></td>
+            <td><a href="#" class="link">Oslo</a></td>
+            <td>5147792</td>
+            <td>323802</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Poland</a></td>
+            <td><a href="#" class="link">Polish: Polska — Rzeczpospolita Polska</a></td>
+            <td><a href="#" class="link">Warsaw, Warszawa</a></td>
+            <td>38346279</td>
+            <td>312685</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Portugal</a></td>
+            <td><a href="#" class="link">Portuguese: Portugal — República Portuguesa</a></td>
+            <td><a href="#" class="link">Lisbon, Lisboa</a></td>
+            <td>10813834</td>
+            <td>92090</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Romania</a></td>
+            <td><a href="#" class="link">Romanian: România</a></td>
+            <td><a href="#" class="link">Bucharest</a></td>
+            <td>21729871</td>
+            <td>238391</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">San Marino</a></td>
+            <td><a href="#" class="link">Italian: San Marino — Repubblica di San Marino</a></td>
+            <td><a href="#" class="link">San Marino</a></td>
+            <td>32742</td>
+            <td>61</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Serbia</a></td>
+            <td><a href="#" class="link">Serbian: Србија — Република Србија, Srbija – Republika Srbija</a></td>
+            <td><a href="#" class="link">Belgrade, Београд, Beograd</a></td>
+            <td>7209764</td>
+            <td>88361</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Slovakia</a></td>
+            <td><a href="#" class="link">Slovak: Slovensko — Slovenská republika</a></td>
+            <td><a href="#" class="link">Bratislava</a></td>
+            <td>5443583</td>
+            <td>49035</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Slovenia</a></td>
+            <td><a href="#" class="link">Slovene: Slovenija — Republika Slovenija</a></td>
+            <td><a href="#" class="link">Ljubljana</a></td>
+            <td>1988292</td>
+            <td>20273</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Spain</a></td>
+            <td><a href="#" class="link">Spanish: Reino de España, Catalan: Regne d'Espanya, Basque: Espainiako
+                Erresuma</a></td>
+            <td><a href="#" class="link">Madrid</a></td>
+            <td>47737941</td>
+            <td>504785</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Sweden</a></td>
+            <td><a href="#" class="link">Swedish: Sverige — Konungariket Sverige</a></td>
+            <td><a href="#" class="link">Stockholm</a></td>
+            <td>9723809</td>
+            <td>450295</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Switzerland</a></td>
+            <td><a href="#" class="link">German: Schweiz, Suisse, Svizzera, Svizra, sviss</a></td>
+            <td><a href="#" class="link">Bern, Berne, Berna</a></td>
+            <td>8061516</td>
+            <td>41277</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Kosovo</a></td>
+            <td><a href="#" class="link">Albanian: Kosova, Kosovë, Косово, Kosovo</a></td>
+            <td><a href="#" class="link">Pristina, Prishtina, Prishtinë, Приштина, Priština</a></td>
+            <td>1836529</td>
+            <td>10887</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Turkey</a></td>
+            <td><a href="#" class="link">Turkish: Türkiye — Türkiye Cumhuriyeti</a></td>
+            <td><a href="#" class="link">Ankara</a></td>
+            <td>79749461</td>
+            <td>783562</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Réunion</a></td>
+            <td><a href="#" class="link">Réunion</a></td>
+            <td><a href="#" class="link">Saint-Denis</a></td>
+            <td>793</td>
+            <td>2512</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Iraq</a></td>
+            <td><a href="#" class="link">Arabic: العراق — جمهورية العراق‎</a></td>
+            <td><a href="#" class="link">Baghdad, بغداد‎</a></td>
+            <td>35116877</td>
+            <td>438317</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Saudi Arabia</a></td>
+            <td><a href="#" class="link">Arabic: السعودية — المملكة العربية السعودية‎</a></td>
+            <td><a href="#" class="link">Riyadh, الرياض‎</a></td>
+            <td>26534504</td>
+            <td>2149690</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">United Arab Emirates</a></td>
+            <td><a href="#" class="link">Arabic: اﻹﻣﺎرا — دولة الإمارات العربية المتحدة‎</a></td>
+            <td><a href="#" class="link">Abu Dhabi, أبوظبي‎</a></td>
+            <td>5314317</td>
+            <td>83600</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Egypt</a></td>
+            <td><a href="#" class="link">Arab Republic of Egypt, جُمهورِيةُ مِصرَ</a></td>
+            <td><a href="#" class="link">Cairo, القاهرة</a></td>
+            <td>84550000</td>
+            <td>1001449</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Morocco</a></td>
+            <td><a href="#" class="link">Kingdom of Morocco, المملكة المغربية</a></td>
+            <td><a href="#" class="link">Rabat, الرباط</a></td>
+            <td>35757175</td>
+            <td>710851</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Tunisia</a></td>
+            <td><a href="#" class="link">Tunisian Republic, الجمهورية التونسية</a></td>
+            <td><a href="#" class="link">Tunis, تونس</a></td>
+            <td>10102000</td>
+            <td>163610</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Libya</a></td>
+            <td><a href="#" class="link">State of Libya, ليبيا</a></td>
+            <td><a href="#" class="link">Tripoli, طرابلس</a></td>
+            <td>6036914</td>
+            <td>1759540</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Yemen</a></td>
+            <td><a href="#" class="link">Arabic: اليمن — الجمهورية اليمنية‎</a></td>
+            <td><a href="#" class="link">Sana'a, صنعاء‎</a></td>
+            <td>24771809</td>
+            <td>527968</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Jordan</a></td>
+            <td><a href="#" class="link">Arabic: اﻷرُدن — المملكة الأردنية الهاشميه‎</a></td>
+            <td><a href="#" class="link">Amman, عمان</a></td>
+            <td>6508887</td>
+            <td>89342</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Kuwait</a></td>
+            <td><a href="#" class="link">Arabic: دولة الكويت — اﻟﻜﻮﻳ‎</a></td>
+            <td><a href="#" class="link">Kuwait City, الكويت‎</a></td>
+            <td>2646314</td>
+            <td>17818</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Lebanon</a></td>
+            <td><a href="#" class="link">Arabic: لبنان — الجمهورية اللبنانية‎</a></td>
+            <td><a href="#" class="link">Beirut, بيروت‎</a></td>
+            <td>4140289</td>
+            <td>10400</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Bahrain</a></td>
+            <td><a href="#" class="link">Arabic: مملكة البحرين — البحرين‎</a></td>
+            <td><a href="#" class="link">Manama, المنامة‎ (Al Manāmah)</a></td>
+            <td>1248348</td>
+            <td>760</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Oman</a></td>
+            <td><a href="#" class="link">Arabic: عُمان — سلطنة عُمان‎</a></td>
+            <td><a href="#" class="link">Muscat, مسقط‎</a></td>
+            <td>3090150</td>
+            <td>309500</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Qatar</a></td>
+            <td><a href="#" class="link">Arabic: قطر — دولة قطر‎</a></td>
+            <td><a href="#" class="link">Doha, الدوحة</a></td>
+            <td>1951591</td>
+            <td>11586</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">United States of America</a></td>
+            <td><a href="#" class="link">United States of America, USA</a></td>
+            <td><a href="#" class="link">Washington, D.C.</a></td>
+            <td>324498267</td>
+            <td>9833520</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Alabama</a></td>
+            <td><a href="#" class="link">Alabama</a></td>
+            <td><a href="#" class="link">Montgomery</a></td>
+            <td>4863300</td>
+            <td>135767</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Alaska</a></td>
+            <td><a href="#" class="link">Alaska</a></td>
+            <td><a href="#" class="link">Juneau</a></td>
+            <td>741894</td>
+            <td>1723337</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Arizona</a></td>
+            <td><a href="#" class="link">Arizona</a></td>
+            <td><a href="#" class="link">Phoenix</a></td>
+            <td>6931071</td>
+            <td>295234</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Arkansas</a></td>
+            <td><a href="#" class="link">Arkansas</a></td>
+            <td><a href="#" class="link">Little Rock</a></td>
+            <td>2988248</td>
+            <td>137732</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">California</a></td>
+            <td><a href="#" class="link">California</a></td>
+            <td><a href="#" class="link">Sacramento</a></td>
+            <td>39250017</td>
+            <td>423967</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Colorado</a></td>
+            <td><a href="#" class="link">Colorado</a></td>
+            <td><a href="#" class="link">Denver</a></td>
+            <td>5540545</td>
+            <td>269601</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Connecticut</a></td>
+            <td><a href="#" class="link">Connecticut</a></td>
+            <td><a href="#" class="link">Hartford</a></td>
+            <td>3576452</td>
+            <td>14357</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Delaware</a></td>
+            <td><a href="#" class="link">Delaware</a></td>
+            <td><a href="#" class="link">Dover</a></td>
+            <td>952065</td>
+            <td>6446</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Florida</a></td>
+            <td><a href="#" class="link">Florida</a></td>
+            <td><a href="#" class="link">Tallahassee</a></td>
+            <td>20612439</td>
+            <td>170312</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Georgia</a></td>
+            <td><a href="#" class="link">Georgia</a></td>
+            <td><a href="#" class="link">Atlanta</a></td>
+            <td>10310371</td>
+            <td>153910</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Hawaii</a></td>
+            <td><a href="#" class="link">English: Hawaii — State of Hawaii, Hawaiʻi</a></td>
+            <td><a href="#" class="link">Honolulu</a></td>
+            <td>1428557</td>
+            <td>28313</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Idaho</a></td>
+            <td><a href="#" class="link">Idaho</a></td>
+            <td><a href="#" class="link">Boise</a></td>
+            <td>1683140</td>
+            <td>216443</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Illinois</a></td>
+            <td><a href="#" class="link">Illinois</a></td>
+            <td><a href="#" class="link">Springfield</a></td>
+            <td>12801539</td>
+            <td>149995</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Indiana</a></td>
+            <td><a href="#" class="link">Indiana</a></td>
+            <td><a href="#" class="link">Indianapolis</a></td>
+            <td>6633053</td>
+            <td>94326</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Iowa</a></td>
+            <td><a href="#" class="link">Iowa</a></td>
+            <td><a href="#" class="link">Des Moines</a></td>
+            <td>3134693</td>
+            <td>145746</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Kansas</a></td>
+            <td><a href="#" class="link">Kansas</a></td>
+            <td><a href="#" class="link">Topeka</a></td>
+            <td>2907289</td>
+            <td>213100</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Kentucky</a></td>
+            <td><a href="#" class="link">Kentucky</a></td>
+            <td><a href="#" class="link">Frankfort</a></td>
+            <td>4436974</td>
+            <td>104656</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Louisiana</a></td>
+            <td><a href="#" class="link">Louisiana</a></td>
+            <td><a href="#" class="link">Baton Rouge</a></td>
+            <td>4681666</td>
+            <td>135659</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Maine</a></td>
+            <td><a href="#" class="link">Maine</a></td>
+            <td><a href="#" class="link">Augusta</a></td>
+            <td>1331479</td>
+            <td>91633</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Maryland</a></td>
+            <td><a href="#" class="link">Maryland</a></td>
+            <td><a href="#" class="link">Annapolis</a></td>
+            <td>6016447</td>
+            <td>32131</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Massachusetts</a></td>
+            <td><a href="#" class="link">Massachusetts</a></td>
+            <td><a href="#" class="link">Boston</a></td>
+            <td>6811779</td>
+            <td>27336</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Michigan</a></td>
+            <td><a href="#" class="link">Michigan</a></td>
+            <td><a href="#" class="link">Lansing</a></td>
+            <td>9928301</td>
+            <td>250487</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Minnesota</a></td>
+            <td><a href="#" class="link">Minnesota</a></td>
+            <td><a href="#" class="link">Saint Paul</a></td>
+            <td>5519952</td>
+            <td>225163</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Mississippi</a></td>
+            <td><a href="#" class="link">Mississippi</a></td>
+            <td><a href="#" class="link">Jackson</a></td>
+            <td>2988726</td>
+            <td>125438</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Missouri</a></td>
+            <td><a href="#" class="link">Missouri</a></td>
+            <td><a href="#" class="link">Jefferson City</a></td>
+            <td>6093000</td>
+            <td>180540</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Montana</a></td>
+            <td><a href="#" class="link">Montana</a></td>
+            <td><a href="#" class="link">Helena</a></td>
+            <td>1042520</td>
+            <td>380831</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Nebraska</a></td>
+            <td><a href="#" class="link">Nebraska</a></td>
+            <td><a href="#" class="link">Lincoln</a></td>
+            <td>1907116</td>
+            <td>200330</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Nevada</a></td>
+            <td><a href="#" class="link">Nevada</a></td>
+            <td><a href="#" class="link">Carson City</a></td>
+            <td>2940058</td>
+            <td>286380</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">New Hampshire</a></td>
+            <td><a href="#" class="link">New Hampshire</a></td>
+            <td><a href="#" class="link">Concord</a></td>
+            <td>1334795</td>
+            <td>24214</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">New Jersey</a></td>
+            <td><a href="#" class="link">New Jersey</a></td>
+            <td><a href="#" class="link">Trenton</a></td>
+            <td>8944469</td>
+            <td>22591</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">New Mexico</a></td>
+            <td><a href="#" class="link">New Mexico</a></td>
+            <td><a href="#" class="link">Santa Fe</a></td>
+            <td>2081015</td>
+            <td>314917</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">New York</a></td>
+            <td><a href="#" class="link">New York</a></td>
+            <td><a href="#" class="link">Albany</a></td>
+            <td>19745289</td>
+            <td>141297</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">North Carolina</a></td>
+            <td><a href="#" class="link">North Carolina</a></td>
+            <td><a href="#" class="link">Raleigh</a></td>
+            <td>10146788</td>
+            <td>139391</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">North Dakota</a></td>
+            <td><a href="#" class="link">North Dakota</a></td>
+            <td><a href="#" class="link">Bismarck</a></td>
+            <td>757952</td>
+            <td>183108</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Ohio</a></td>
+            <td><a href="#" class="link">Ohio</a></td>
+            <td><a href="#" class="link">Columbus</a></td>
+            <td>11614373</td>
+            <td>116098</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Oklahoma</a></td>
+            <td><a href="#" class="link">Oklahoma</a></td>
+            <td><a href="#" class="link">Oklahoma City</a></td>
+            <td>3923561</td>
+            <td>181037</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Oregon</a></td>
+            <td><a href="#" class="link">Oregon</a></td>
+            <td><a href="#" class="link">Salem</a></td>
+            <td>4093465</td>
+            <td>254799</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Pennsylvania</a></td>
+            <td><a href="#" class="link">Pennsylvania</a></td>
+            <td><a href="#" class="link">Harrisburg</a></td>
+            <td>12784227</td>
+            <td>119280</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Rhode Island</a></td>
+            <td><a href="#" class="link">Rhode Island</a></td>
+            <td><a href="#" class="link">Providence</a></td>
+            <td>1056426</td>
+            <td>4001</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">South Carolina</a></td>
+            <td><a href="#" class="link">South Carolina</a></td>
+            <td><a href="#" class="link">Columbia</a></td>
+            <td>4961119</td>
+            <td>82933</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">South Dakota</a></td>
+            <td><a href="#" class="link">South Dakota</a></td>
+            <td><a href="#" class="link">Pierre</a></td>
+            <td>865454</td>
+            <td>199729</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Tennessee</a></td>
+            <td><a href="#" class="link">Tennessee</a></td>
+            <td><a href="#" class="link">Nashville</a></td>
+            <td>6651194</td>
+            <td>109153</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Texas</a></td>
+            <td><a href="#" class="link">Texas</a></td>
+            <td><a href="#" class="link">Austin</a></td>
+            <td>27862596</td>
+            <td>695662</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Utah</a></td>
+            <td><a href="#" class="link">Utah</a></td>
+            <td><a href="#" class="link">Salt Lake City</a></td>
+            <td>3051217</td>
+            <td>219882</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Vermont</a></td>
+            <td><a href="#" class="link">Vermont</a></td>
+            <td><a href="#" class="link">Montpelier</a></td>
+            <td>624594</td>
+            <td>24906</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Virginia</a></td>
+            <td><a href="#" class="link">Virginia</a></td>
+            <td><a href="#" class="link">Richmond</a></td>
+            <td>8411808</td>
+            <td>110787</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Washington</a></td>
+            <td><a href="#" class="link">Washington</a></td>
+            <td><a href="#" class="link">Olympia</a></td>
+            <td>7288000</td>
+            <td>184661</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">West Virginia</a></td>
+            <td><a href="#" class="link">West Virginia</a></td>
+            <td><a href="#" class="link">Charleston</a></td>
+            <td>1831102</td>
+            <td>62756</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Wisconsin</a></td>
+            <td><a href="#" class="link">Wisconsin</a></td>
+            <td><a href="#" class="link">Madison</a></td>
+            <td>5778708</td>
+            <td>169635</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Wyoming</a></td>
+            <td><a href="#" class="link">Wyoming</a></td>
+            <td><a href="#" class="link">Cheyenne</a></td>
+            <td>585501</td>
+            <td>253335</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">District of Columbia</a></td>
+            <td><a href="#" class="link">District of Columbia</a></td>
+            <td><a href="#" class="link">Washington</a></td>
+            <td>681170</td>
+            <td>177</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Canada</a></td>
+            <td><a href="#" class="link">Canada</a></td>
+            <td><a href="#" class="link">Ottawa</a></td>
+            <td>36443632</td>
+            <td>9984670</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Ontario</a></td>
+            <td><a href="#" class="link">Ontario</a></td>
+            <td><a href="#" class="link">Toronto</a></td>
+            <td>14063256</td>
+            <td>1076395</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Quebec</a></td>
+            <td><a href="#" class="link">Quebec</a></td>
+            <td><a href="#" class="link">Quebec City</a></td>
+            <td>8326100</td>
+            <td>1542056</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Manitoba</a></td>
+            <td><a href="#" class="link">Manitoba</a></td>
+            <td><a href="#" class="link">Winnipeg</a></td>
+            <td>1318100</td>
+            <td>647797</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">British Columbia</a></td>
+            <td><a href="#" class="link">British Columbia</a></td>
+            <td><a href="#" class="link">Victoria</a></td>
+            <td>4751600</td>
+            <td>944735</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Saskatchewan</a></td>
+            <td><a href="#" class="link">Saskatchewan</a></td>
+            <td><a href="#" class="link">Regina</a></td>
+            <td>1150600</td>
+            <td>651036</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Alberta</a></td>
+            <td><a href="#" class="link">Alberta</a></td>
+            <td><a href="#" class="link">Edmonton</a></td>
+            <td>4252900</td>
+            <td>661848</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Newfoundland and Labrador</a></td>
+            <td><a href="#" class="link">Newfoundland and Labrador</a></td>
+            <td><a href="#" class="link">St. John's</a></td>
+            <td>530536</td>
+            <td>405212</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Nova Scotia, New Brunswick, Prince Edward Island</a></td>
+            <td><a href="#" class="link">Nova Scotia, New Brunswick, Prince Edward Island</a></td>
+            <td><a href="#" class="link">Halifax, Fredericton, Charlottetown</a></td>
+            <td>1813102</td>
+            <td>133851</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Northwest Territories</a></td>
+            <td><a href="#" class="link">Northwest Territories</a></td>
+            <td><a href="#" class="link">Yellowknife</a></td>
+            <td>41462</td>
+            <td>1346106</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Yukon</a></td>
+            <td><a href="#" class="link">Yukon</a></td>
+            <td><a href="#" class="link">Whitehorse</a></td>
+            <td>37505</td>
+            <td>482443</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Nunavut</a></td>
+            <td><a href="#" class="link">Nunavut</a></td>
+            <td><a href="#" class="link">Iqaluit</a></td>
+            <td>31906</td>
+            <td>2038722</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Puerto Rico and United States Virgin Islands</a></td>
+            <td><a href="#" class="link">Puerto Rico, USA Virgin Islands</a></td>
+            <td><a href="#" class="link">San Juan, Charlotte Amalie</a></td>
+            <td>3492672</td>
+            <td>9107</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Grand Bahama</a></td>
+            <td><a href="#" class="link">Grand Bahama</a></td>
+            <td><a href="#" class="link">FreePort</a></td>
+            <td>51756</td>
+            <td>1373</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">New Providence</a></td>
+            <td><a href="#" class="link">New Providence</a></td>
+            <td><a href="#" class="link">Nassau</a></td>
+            <td>274587</td>
+            <td>207</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Jamaica</a></td>
+            <td><a href="#" class="link">Jamaica</a></td>
+            <td><a href="#" class="link">Kingston</a></td>
+            <td>2950219</td>
+            <td>10991</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Cayman Islands</a></td>
+            <td><a href="#" class="link">Cayman Islands</a></td>
+            <td><a href="#" class="link">George Town</a></td>
+            <td>56895</td>
+            <td>264</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Guadeloupe</a></td>
+            <td><a href="#" class="link">Guadeloupe</a></td>
+            <td><a href="#" class="link">Basse-Terre</a></td>
+            <td>402119</td>
+            <td>1628</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Martinique</a></td>
+            <td><a href="#" class="link">Martinique</a></td>
+            <td><a href="#" class="link">Fort-de-France</a></td>
+            <td>386486</td>
+            <td>436</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">French Guiana</a></td>
+            <td><a href="#" class="link">French: Guyane</a></td>
+            <td><a href="#" class="link">Cayenne</a></td>
+            <td>250109</td>
+            <td>83534</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Saint Barthélemy</a></td>
+            <td><a href="#" class="link">Collectivity of Saint Barthélemy</a></td>
+            <td><a href="#" class="link">Gustavia</a></td>
+            <td>9282</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Mexico</a></td>
+            <td><a href="#" class="link">United Mexican States</a></td>
+            <td><a href="#" class="link">Mexico City</a></td>
+            <td>119530753</td>
+            <td>1972550</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Australia</a></td>
+            <td><a href="#" class="link">English: Australia — Commonwealth of Australia</a></td>
+            <td><a href="#" class="link">Canberra</a></td>
+            <td>23268319</td>
+            <td>7741220</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">New Zealand</a></td>
+            <td><a href="#" class="link">English: New Zealand, Aotearoa</a></td>
+            <td><a href="#" class="link">Wellington</a></td>
+            <td>4327944</td>
+            <td>267710</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Angola</a></td>
+            <td><a href="#" class="link">Republic of Angola</a></td>
+            <td><a href="#" class="link">Luanda</a></td>
+            <td>16941000</td>
+            <td>1246700</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Botswana</a></td>
+            <td><a href="#" class="link">Republic of Botswana</a></td>
+            <td><a href="#" class="link">Gaborone</a></td>
+            <td>1839833</td>
+            <td>581726</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Lesotho</a></td>
+            <td><a href="#" class="link">Kingdom of Lesotho</a></td>
+            <td><a href="#" class="link">Maseru</a></td>
+            <td>2067000</td>
+            <td>30355</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Madagascar</a></td>
+            <td><a href="#" class="link">Republic of Madagascar</a></td>
+            <td><a href="#" class="link">Antananarivo</a></td>
+            <td>18606000</td>
+            <td>587041</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Malawi</a></td>
+            <td><a href="#" class="link">Republic of Malawi</a></td>
+            <td><a href="#" class="link">Lilongwe</a></td>
+            <td>12884000</td>
+            <td>118484</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Mauritius</a></td>
+            <td><a href="#" class="link">Republic of Mauritius</a></td>
+            <td><a href="#" class="link">Port Louis</a></td>
+            <td>1219220</td>
+            <td>2040</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Mayotte</a></td>
+            <td><a href="#" class="link">Mayotte</a></td>
+            <td><a href="#" class="link">Mamoudzou</a></td>
+            <td>186452</td>
+            <td>374</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Mozambique</a></td>
+            <td><a href="#" class="link">Republic of Mozambique</a></td>
+            <td><a href="#" class="link">Maputo</a></td>
+            <td>20366795</td>
+            <td>801590</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Namibia</a></td>
+            <td><a href="#" class="link">Republic of Namibia</a></td>
+            <td><a href="#" class="link">Windhoek</a></td>
+            <td>2031000</td>
+            <td>825418</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">South Africa</a></td>
+            <td><a href="#" class="link">Republic of South Africa</a></td>
+            <td><a href="#" class="link">Bloemfontein, Cape Town, and Pretoria</a></td>
+            <td>52981991</td>
+            <td>1221037</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Swaziland</a></td>
+            <td><a href="#" class="link">Kingdom of Swaziland</a></td>
+            <td><a href="#" class="link">Lobamba, Mbabane</a></td>
+            <td>1032000</td>
+            <td>17364</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Zambia</a></td>
+            <td><a href="#" class="link">Republic of Zambia</a></td>
+            <td><a href="#" class="link">Lusaka</a></td>
+            <td>14668000</td>
+            <td>752614</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Zimbabwe</a></td>
+            <td><a href="#" class="link">Republic of Zimbabwe</a></td>
+            <td><a href="#" class="link">Harare</a></td>
+            <td>13010000</td>
+            <td>390757</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Burundi</a></td>
+            <td><a href="#" class="link">Republic of Burundi</a></td>
+            <td><a href="#" class="link">Bujumbura</a></td>
+            <td>7548000</td>
+            <td>27831</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Ethiopia</a></td>
+            <td><a href="#" class="link">Federal Democratic Republic of Ethiopia</a></td>
+            <td><a href="#" class="link">Addis Ababa</a></td>
+            <td>85237338</td>
+            <td>1104300</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Kenya</a></td>
+            <td><a href="#" class="link">Republic of Kenya</a></td>
+            <td><a href="#" class="link">Nairobi</a></td>
+            <td>34707817</td>
+            <td>580367</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Rwanda</a></td>
+            <td><a href="#" class="link">Republic of Rwanda</a></td>
+            <td><a href="#" class="link">Kigali</a></td>
+            <td>7600000</td>
+            <td>26798</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">South Sudan</a></td>
+            <td><a href="#" class="link">Republic of South Sudan</a></td>
+            <td><a href="#" class="link">Juba</a></td>
+            <td>8260490</td>
+            <td>644329</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Tanzania</a></td>
+            <td><a href="#" class="link">United Republic of Tanzania</a></td>
+            <td><a href="#" class="link">Dodoma</a></td>
+            <td>44929002</td>
+            <td>945203</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Uganda</a></td>
+            <td><a href="#" class="link">Republic of Uganda</a></td>
+            <td><a href="#" class="link">Kampala</a></td>
+            <td>27616000</td>
+            <td>236040</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Benin</a></td>
+            <td><a href="#" class="link">Republic of Benin</a></td>
+            <td><a href="#" class="link">Porto Novo</a></td>
+            <td>8439000</td>
+            <td>112622</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Burkina Faso</a></td>
+            <td><a href="#" class="link">Burkina Faso</a></td>
+            <td><a href="#" class="link">Ouagadougou</a></td>
+            <td>13228000</td>
+            <td>274001</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Cameroon</a></td>
+            <td><a href="#" class="link">Republic of Cameroon</a></td>
+            <td><a href="#" class="link">Yaoundé</a></td>
+            <td>17795000</td>
+            <td>475442</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Central African Republic</a></td>
+            <td><a href="#" class="link">Central African Republic</a></td>
+            <td><a href="#" class="link">Bangui</a></td>
+            <td>4216666</td>
+            <td>622984</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Chad</a></td>
+            <td><a href="#" class="link">Republic of Chad</a></td>
+            <td><a href="#" class="link">N'Djamena</a></td>
+            <td>10146000</td>
+            <td>1284000</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Equatorial Guinea</a></td>
+            <td><a href="#" class="link">Republic of Equatorial Guinea</a></td>
+            <td><a href="#" class="link">Malabo</a></td>
+            <td>504000</td>
+            <td>28051</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Gabon</a></td>
+            <td><a href="#" class="link">Gabonese Republic</a></td>
+            <td><a href="#" class="link">Libreville</a></td>
+            <td>1384000</td>
+            <td>267668</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Gambia</a></td>
+            <td><a href="#" class="link">Republic of the Gambia</a></td>
+            <td><a href="#" class="link">Banjul</a></td>
+            <td>1517000</td>
+            <td>10380</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Ghana</a></td>
+            <td><a href="#" class="link">Republic of Ghana</a></td>
+            <td><a href="#" class="link">Accra</a></td>
+            <td>23000000</td>
+            <td>238534</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Guinea</a></td>
+            <td><a href="#" class="link">Republic of Guinea</a></td>
+            <td><a href="#" class="link">Conakry</a></td>
+            <td>10057975</td>
+            <td>245857</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Guinea-Bissau</a></td>
+            <td><a href="#" class="link">Republic of Guinea-Bissau</a></td>
+            <td><a href="#" class="link">Bissau</a></td>
+            <td>1586000</td>
+            <td>36125</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Ivory Coast</a></td>
+            <td><a href="#" class="link">Republic of Côte d'Ivoire</a></td>
+            <td><a href="#" class="link">Yamoussoukro</a></td>
+            <td>17654843</td>
+            <td>322460</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Mali</a></td>
+            <td><a href="#" class="link">Republic of Mali</a></td>
+            <td><a href="#" class="link">Bamako</a></td>
+            <td>13518000</td>
+            <td>1240192</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Niger</a></td>
+            <td><a href="#" class="link">Republic of Niger</a></td>
+            <td><a href="#" class="link">Niamey</a></td>
+            <td>13957000</td>
+            <td>1267000</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Nigeria</a></td>
+            <td><a href="#" class="link">Federal Republic of Nigeria</a></td>
+            <td><a href="#" class="link">Abuja</a></td>
+            <td>174507539</td>
+            <td>923768</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Liberia</a></td>
+            <td><a href="#" class="link">Republic of Liberia</a></td>
+            <td><a href="#" class="link">Monrovia</a></td>
+            <td>4128572</td>
+            <td>111369</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Republic of Congo</a></td>
+            <td><a href="#" class="link">Republic of the Congo</a></td>
+            <td><a href="#" class="link">Brazzaville</a></td>
+            <td>4012809</td>
+            <td>342000</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">São Tomé and Príncipe</a></td>
+            <td><a href="#" class="link">Democratic Republic of São Tomé and Príncipe</a></td>
+            <td><a href="#" class="link">São Tomé</a></td>
+            <td>183176</td>
+            <td>964000</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Senegal</a></td>
+            <td><a href="#" class="link">Republic of Senegal</a></td>
+            <td><a href="#" class="link">Dakar</a></td>
+            <td>11658000</td>
+            <td>196723</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Sierra Leone</a></td>
+            <td><a href="#" class="link">Republic of Sierra Leone</a></td>
+            <td><a href="#" class="link">Freetown</a></td>
+            <td>6144562</td>
+            <td>71740</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Togo</a></td>
+            <td><a href="#" class="link">Togolese Republic</a></td>
+            <td><a href="#" class="link">Lomé</a></td>
+            <td>7154237</td>
+            <td>56785</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">India</a></td>
+            <td><a href="#" class="link">English: India — Republic of India, Hindi: भारत — भारत गणरा᭔य</a></td>
+            <td><a href="#" class="link">New Delhi, नई दिल्ली</a></td>
+            <td>1205073612</td>
+            <td>3287263</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Indonesia</a></td>
+            <td><a href="#" class="link">Indonesian: Indonesia — Republik Indonesia</a></td>
+            <td><a href="#" class="link">Jakarta</a></td>
+            <td>248645008</td>
+            <td>1904569</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Israel</a></td>
+            <td><a href="#" class="link">Arabic: إسرائيل — دَوْلَة إِسْرَائِيل‎, Hebrew: יִשְרָאֵל — מְדִינַת
+                יִשְׂרָאֵל</a></td>
+            <td><a href="#" class="link">Jerusalem, ירושלים</a></td>
+            <td>7590758</td>
+            <td>20770</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Argentina</a></td>
+            <td><a href="#" class="link">Spanish: Argentina — República Argentina</a></td>
+            <td><a href="#" class="link">Buenos Aires</a></td>
+            <td>41769726</td>
+            <td>2780400</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Brazil</a></td>
+            <td><a href="#" class="link">Portuguese: Brasil — República Federativa do Brasil</a></td>
+            <td><a href="#" class="link">Brasília</a></td>
+            <td>203429773</td>
+            <td>8514877</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Chile</a></td>
+            <td><a href="#" class="link">Spanish: Chile — República de Chile</a></td>
+            <td><a href="#" class="link">Santiago</a></td>
+            <td>16888760</td>
+            <td>756102</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Panama</a></td>
+            <td><a href="#" class="link">Republic of Panama/República de Panamá</a></td>
+            <td><a href="#" class="link">Panama City</a></td>
+            <td>4058374</td>
+            <td>74178</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Colombia</a></td>
+            <td><a href="#" class="link">Spanish: Colombia — República de Colombia</a></td>
+            <td><a href="#" class="link">Bogotá</a></td>
+            <td>46366364</td>
+            <td>1138910</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Paraguay</a></td>
+            <td><a href="#" class="link">Spanish: Paraguay — República del Paraguay, Paraguai</a></td>
+            <td><a href="#" class="link">Asunción</a></td>
+            <td>6459058</td>
+            <td>406752</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Peru</a></td>
+            <td><a href="#" class="link">Aymara: Perú - — República del Perú</a></td>
+            <td><a href="#" class="link">Lima</a></td>
+            <td>29248943</td>
+            <td>1285216</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Suriname</a></td>
+            <td><a href="#" class="link">Dutch: Suriname — Republiek Suriname</a></td>
+            <td><a href="#" class="link">Paramaribo</a></td>
+            <td>491989</td>
+            <td>163820</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Uruguay</a></td>
+            <td><a href="#" class="link">Spanish: Uruguay — República Oriental del Uruguay</a></td>
+            <td><a href="#" class="link">Montevideo</a></td>
+            <td>3308535</td>
+            <td>176215</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Venezuela</a></td>
+            <td><a href="#" class="link">Spanish: Venezuela — República Bolivariana de Venezuela</a></td>
+            <td><a href="#" class="link">Santiago de León de Caracas</a></td>
+            <td>31775371</td>
+            <td>916445</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">Costa Rica</a></td>
+            <td><a href="#" class="link">Republic of Costa Rica/República de Costa Rica</a></td>
+            <td><a href="#" class="link">San José</a></td>
+            <td>4586353</td>
+            <td>51100</td>
+          </tr>
+
+          <tr>
+            <td>Transnistria</td>
+            <td>Moldovan: Нистрянэ, Приднестрóвье, Придністров'я</td>
+            <td>Tiraspol, Тирасполь</td>
+            <td>530123</td>
+            <td>3500</td>
+          </tr>
+          <tr>
+            <td>Akrotiri and Dhekelia</td>
+            <td>English: Akrotiri and Dhekelia — Sovereign Base Areas of Akrotiri and Dhekelia</td>
+            <td>Episkopi Cantonment</td>
+            <td>157</td>
+            <td>254</td>
+          </tr>
+          <tr>
+            <td>Faroe Islands</td>
+            <td>Faroese: Føroyar, Færøerne</td>
+            <td>Tórshavn, Thorshavn</td>
+            <td>49947</td>
+            <td>1393</td>
+          </tr>
+          <tr>
+            <td>Gibraltar</td>
+            <td>English: Gibraltar</td>
+            <td>Gibraltar</td>
+            <td>29185</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <td>Guernsey</td>
+            <td>English: Guernsey — Bailiwick of Guernsey</td>
+            <td>Saint Peter Port</td>
+            <td>65849</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Jersey</td>
+            <td>English: Jersey — Bailiwick of Jersey, French: Jèrri — Bailliage de Jèrri</td>
+            <td>Saint Helier</td>
+            <td>96513</td>
+            <td>116</td>
+          </tr>
+          <tr>
+            <td>Åland</td>
+            <td>Swedish: Åland — Landskapet Åland</td>
+            <td>Mariehamn</td>
+            <td>27501</td>
+            <td>6787</td>
+          </tr>
+          <tr>
+            <td>Svalbard</td>
+            <td>Bokmål: Svalbard</td>
+            <td>Longyearbyen</td>
+            <td>2019</td>
+            <td>62045</td>
+          </tr>
+          <tr>
+            <td>Afghanistan</td>
+            <td>Dari: جمهوری اسلامی افغانستان — افغانستان</td>
+            <td>Kabul, کابل (Kābul)</td>
+            <td>30419928</td>
+            <td>652230</td>
+          </tr>
+          <tr>
+            <td>Armenia</td>
+            <td>Armenian: Հայաստան — Հայաստանի Հանրապետությու</td>
+            <td>Yerevan, Երևան (Yerevan)</td>
+            <td>2970495</td>
+            <td>29743</td>
+          </tr>
+          <tr>
+            <td>Bangladesh</td>
+            <td>Bengali: বাংলােদ — গণপ্রজাতন্ত্রী বাংলাদেশ</td>
+            <td>Dhaka, ঢাকা (Ḍhākā)</td>
+            <td>161083804</td>
+            <td>143998</td>
+          </tr>
+          <tr>
+            <td>Bhutan</td>
+            <td>Dzongkha: འྲག་ཡ ఉ ལ — འྲག་གྷལ་ཁ</td>
+            <td>Thimphu, ཐིམ་ཕུ</td>
+            <td>716896</td>
+            <td>38394</td>
+          </tr>
+          <tr>
+            <td>Brunei</td>
+            <td>English: Brunei Darussalam</td>
+            <td>Bandar Seri Begawan</td>
+            <td>408786</td>
+            <td>5765</td>
+          </tr>
+          <tr>
+            <td>Cambodia</td>
+            <td>Khmer: កមុពា — រពះាាាចរក កមុពា</td>
+            <td>Phnom Penh, ភ្នំពេញ,</td>
+            <td>14952665</td>
+            <td>181035</td>
+          </tr>
+          <tr>
+            <td>China</td>
+            <td>Chinese: 中国 — 中华人民共和国</td>
+            <td>Beijing, 北京</td>
+            <td>1343239923</td>
+            <td>9596961</td>
+          </tr>
+          <tr>
+            <td>Iran</td>
+            <td>جمهوری اسلامی ایران ,English:Iran</td>
+            <td>Tehran, تهران‎</td>
+            <td>78868711</td>
+            <td>1648195</td>
+          </tr>
+          <tr>
+            <td>Japan</td>
+            <td>Japanese: 日本 — 日本国</td>
+            <td>Tokyo, 東京都</td>
+            <td>127368088</td>
+            <td>377915</td>
+          </tr>
+          <tr>
+            <td>Korea North</td>
+            <td>Korean: 조선 — 조선 민주주의 인민 공화국</td>
+            <td>Pyongyang, 평양</td>
+            <td>24589122</td>
+            <td>120538</td>
+          </tr>
+          <tr>
+            <td>Korea South</td>
+            <td>Korean: 한국 — 대한 민국</td>
+            <td>Seoul, 서울</td>
+            <td>48860500</td>
+            <td>99720</td>
+          </tr>
+          <tr>
+            <td>Kyrgyzstan</td>
+            <td>Kyrgyz: Кыргызстан, Russian: Кыргызстан</td>
+            <td>Bishkek, Бишкек</td>
+            <td>5496737</td>
+            <td>199951</td>
+          </tr>
+          <tr>
+            <td>Laos</td>
+            <td>Lao: ສາທາລະນະລດປະຊາທ ັ ປະໄຕປະຊາຊ ິ ນລາວ</td>
+            <td>Vientiane, ວຽງຈັນ (Viangchan)</td>
+            <td>6586266</td>
+            <td>236800</td>
+          </tr>
+          <tr>
+            <td>Malaysia</td>
+            <td>Malay: Malaysia</td>
+            <td>Kuala Lumpur</td>
+            <td>29179952</td>
+            <td>329847</td>
+          </tr>
+          <tr>
+            <td>Maldives</td>
+            <td>Dhivehi: ދިވެހިރާއްޖެ — ދިވެހިރާއްޖޭގެ ޖުމްހޫރިއްޔާ</td>
+            <td>Malé / Male', މާލެ</td>
+            <td>394451</td>
+            <td>298</td>
+          </tr>
+          <tr>
+            <td>Mongolia</td>
+            <td>Mongolian: Монго — Монгол улс , Монголия</td>
+            <td>Ulaanbaatar, Улаанбаатар</td>
+            <td>3179997</td>
+            <td>1564116</td>
+          </tr>
+          <tr>
+            <td>Myanmar</td>
+            <td>Burmese: မြန်မာပြည် — ပြည်ထောင်စု သမ္မတ မြန်မာနိုင်ငံတော်‌</td>
+            <td>Nay Pyi Taw, နေပြည်တော်</td>
+            <td>54584650</td>
+            <td>676578</td>
+          </tr>
+          <tr>
+            <td>Nepal</td>
+            <td>Nepali: नपाल — सघीय लोकताि᭠ᮢक गणत᭠ᮢ न ं पाल</td>
+            <td>Kathmandu, काठमाडौं</td>
+            <td>29890686</td>
+            <td>147181</td>
+          </tr>
+          <tr>
+            <td>Pakistan</td>
+            <td>English: Pakistan — Islamic Republic of Pakistan, Urdu: پَاکِسْتَان — اسلامی جمہوریہ پاکستان</td>
+            <td>Islamabad, اسلام آباد</td>
+            <td>190291129</td>
+            <td>796095</td>
+          </tr>
+          <tr>
+            <td>Palestine</td>
+            <td>Arabic: فلسطين — دولة فلسـطين‎</td>
+            <td>Jerusalem, Ramallah</td>
+            <td>4225710</td>
+            <td>6220</td>
+          </tr>
+          <tr>
+            <td>Singapore</td>
+            <td>Chinese: 新加坡, Singapore, Singapura, சிங்கப்பூர்</td>
+            <td>Singapore, 新加坡, Singapura, சிங்கப்பூர்</td>
+            <td>5353494</td>
+            <td>697</td>
+          </tr>
+          <tr>
+            <td>Sri Lanka</td>
+            <td>Sinhala: ශ්රී ලංකා, இலᾱைக</td>
+            <td>Sri Jayawardenapura Kotte, ශ්‍රී ජයවර්ධනපුර ක ෝට්ටේ, ஶ்ரீ ஜெயவர்த்தனபுர கோட்டை</td>
+            <td>21481334</td>
+            <td>65610</td>
+          </tr>
+          <tr>
+            <td>Syria</td>
+            <td>Arabic: ﺔُﺳ ِﻮرَا / ﺳ ِﻮر — جمهورية سوريا العربية‎</td>
+            <td>Damascus, دمشق</td>
+            <td>22530746</td>
+            <td>185180</td>
+          </tr>
+          <tr>
+            <td>Tajikistan</td>
+            <td>Tajik: Тоҷикистон, Таджикистан</td>
+            <td>Dushanbe, Душанбе</td>
+            <td>7768385</td>
+            <td>143100</td>
+          </tr>
+          <tr>
+            <td>Thailand</td>
+            <td>Thai: ประเทศไทย — ราชอาณาจักรไทย</td>
+            <td>Bangkok, กรุงเทพฯ</td>
+            <td>67091089</td>
+            <td>513120</td>
+          </tr>
+          <tr>
+            <td>Timor-Leste</td>
+            <td>Portuguese: Timor-Leste, Tetum: Timor Lorosa'e</td>
+            <td>Dili</td>
+            <td>1143667</td>
+            <td>14874</td>
+          </tr>
+          <tr>
+            <td>Turkmenistan</td>
+            <td>Turkmen: Türkmenistan, Туркменистан</td>
+            <td>Ashgabat, Aşgabat, Ашхабад</td>
+            <td>5054828</td>
+            <td>488100</td>
+          </tr>
+          <tr>
+            <td>Uzbekistan</td>
+            <td>Uzbek: O‘zbekiston — O‘zbekiston Respublikasi, Узбекистан</td>
+            <td>Tashkent, Toshkent, Ташкент</td>
+            <td>28394180</td>
+            <td>447400</td>
+          </tr>
+          <tr>
+            <td>Vietnam / Viet Nam</td>
+            <td>Vietnamese: Việt Nam — Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam</td>
+            <td>Hanoi, Hà Nội</td>
+            <td>91519289</td>
+            <td>331210</td>
+          </tr>
+          <tr>
+            <td>Abkhazia</td>
+            <td>Abkhaz: Аҧсуа, Абхазия</td>
+            <td>Sukhumi, Sukhum, Сухуми</td>
+            <td>265015</td>
+            <td>8660</td>
+          </tr>
+          <tr>
+            <td>Nagorno-Karabakh</td>
+            <td>Armenian: Լեռնային Ղարաբաղ, Нагорный-Карабах</td>
+            <td>Stepanakert, Ստեփանակերտ, Степанакерт</td>
+            <td>141412</td>
+            <td>7000</td>
+          </tr>
+          <tr>
+            <td>Northern Cyprus</td>
+            <td>Turkish: Kuzey Kıbrıs — Kuzey Kıbrıs Türk Cumhuriyeti</td>
+            <td>Nicosia, Λευκωσία, Lefkoşa</td>
+            <td>285356</td>
+            <td>3355</td>
+          </tr>
+          <tr>
+            <td>Ossetia South</td>
+            <td>Ossetian: Хуссар Ирыстон, Russian: Южная Осетия</td>
+            <td>Tskhinvali, Цхинвал, Чъреба</td>
+            <td>70218</td>
+            <td>3900</td>
+          </tr>
+          <tr>
+            <td>Taiwan</td>
+            <td>Traditional Chinese: 臺灣/台灣 — 中華民國</td>
+            <td>Taipei</td>
+            <td>23071779</td>
+            <td>35980</td>
+          </tr>
+          <tr>
+            <td>Akrotiri and Dhekelia</td>
+            <td>English: Akrotiri and Dhekelia — Sovereign Base Areas of Akrotiri and Dhekelia</td>
+            <td>Episkopi Cantonment</td>
+            <td>15891</td>
+            <td>254</td>
+          </tr>
+          <tr>
+            <td>Christmas Island</td>
+            <td>English: Christmas Island — Territory of Christmas Island</td>
+            <td>Flying Fish Cove</td>
+            <td>1402</td>
+            <td>135</td>
+          </tr>
+          <tr>
+            <td>Cocos (Keeling) Islands</td>
+            <td>English: Cocos Islands — Territory of the Cocos Islands</td>
+            <td>West Island, Bantam</td>
+            <td>596</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>Hong Kong</td>
+            <td>Chinese: 香港 — 中華人民共和國香港特別行政區, English: Hong Kong</td>
+            <td>Hong Kong</td>
+            <td>7122508</td>
+            <td>1104</td>
+          </tr>
+          <tr>
+            <td>Macau / Macao</td>
+            <td>Chinese: 澳門 — 中華人民共和國澳門特別行政區, Portuguese: Macau</td>
+            <td>Macau, Macao</td>
+            <td>573003</td>
+            <td>282</td>
+          </tr>
+          <tr>
+            <td>Algeria</td>
+            <td>People's Democratic Republic of Algeria</td>
+            <td>Algiers</td>
+            <td>33333267</td>
+            <td>2381740</td>
+          </tr>
+          <tr>
+            <td>Cape Verde</td>
+            <td>Republic of Cabo Verde</td>
+            <td>Praia</td>
+            <td>420979</td>
+            <td>4033</td>
+          </tr>
+          <tr>
+            <td>Comoros</td>
+            <td>Union of the Comoros</td>
+            <td>Moroni</td>
+            <td>798005</td>
+            <td>2235</td>
+          </tr>
+          <tr>
+            <td>Djibouti</td>
+            <td>Republic of Djibouti</td>
+            <td>Djibouti</td>
+            <td>906000</td>
+            <td>23200</td>
+          </tr>
+          <tr>
+            <td>Eritrea</td>
+            <td>State of Eritrea</td>
+            <td>Asmara</td>
+            <td>5880000</td>
+            <td>117600</td>
+          </tr>
+          <tr>
+            <td>Mauritania</td>
+            <td>Islamic Republic of Mauritania</td>
+            <td>Nouakchott</td>
+            <td>3069000</td>
+            <td>1030700</td>
+          </tr>
+          <tr>
+            <td>Democratic Republic of the Congo</td>
+            <td>Democratic Republic of the Congo</td>
+            <td>Kinshasa</td>
+            <td>75507308</td>
+            <td>2344858</td>
+          </tr>
+          <tr>
+            <td>Seychelles</td>
+            <td>Republic of Seychelles</td>
+            <td>Victoria</td>
+            <td>80654</td>
+            <td>451000</td>
+          </tr>
+          <tr>
+            <td>Somalia</td>
+            <td>Federal Republic of Somalia</td>
+            <td>Mogadishu</td>
+            <td>9832017</td>
+            <td>637657</td>
+          </tr>
+          <tr>
+            <td>Sudan</td>
+            <td>Republic of the Sudan</td>
+            <td>Khartoum</td>
+            <td>36787012</td>
+            <td>1861484</td>
+          </tr>
+          <tr>
+            <td>Somaliland</td>
+            <td>Republic of Somaliland</td>
+            <td>Hargeisa</td>
+            <td>4000000</td>
+            <td>137600</td>
+          </tr>
+          <tr>
+            <td>Sahrawi</td>
+            <td>Sahrawi Arab Democratic Republic</td>
+            <td>El Aaiún, Bir Lehlou</td>
+            <td>266000</td>
+            <td>267405</td>
+          </tr>
+          <tr>
+            <td>Saint Helena, Ascension and Tristan da Cunha</td>
+            <td>Saint Helena, Ascension and Tristan da Cunha</td>
+            <td>Jamestown</td>
+            <td>5661</td>
+            <td>420</td>
+          </tr>
+          <tr>
+            <td>Canary Islands</td>
+            <td>Canary Islands</td>
+            <td>Las Palmas de Gran Canaria and Santa Cruz de Tenerife</td>
+            <td>2205247</td>
+            <td>7447</td>
+          </tr>
+          <tr>
+            <td>Ceuta</td>
+            <td>Autonomous City of Ceuta</td>
+            <td>Ceuta</td>
+            <td>76861</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>Madeira</td>
+            <td>Autonomous Region of Madeira</td>
+            <td>Funchal</td>
+            <td>245806</td>
+            <td>828</td>
+          </tr>
+          <tr>
+            <td>Lampedusa and Lampione</td>
+            <td>Lampedusa and Lampione</td>
+            <td>Lampedusa e Linosa</td>
+            <td>6304</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Fiji</td>
+            <td>English: Fiji — Republic of Fiji, Viti — Matanitu ko Viti</td>
+            <td>Suva</td>
+            <td>890057</td>
+            <td>18274</td>
+          </tr>
+          <tr>
+            <td>Kiribati</td>
+            <td>English: Kiribati — Republic of Kiribati</td>
+            <td>Tarawa, Bairiki</td>
+            <td>101998</td>
+            <td>811</td>
+          </tr>
+          <tr>
+            <td>Marshall Islands</td>
+            <td>English: Marshall Islands, Aelōn in ̄ Maje ̧ļ</td>
+            <td>Majuro</td>
+            <td>68480</td>
+            <td>181</td>
+          </tr>
+          <tr>
+            <td>Federated States of Micronesia</td>
+            <td>English: Federated States of Micronesia</td>
+            <td>Palikir</td>
+            <td>106487</td>
+            <td>702</td>
+          </tr>
+          <tr>
+            <td>Nauru</td>
+            <td>English: Nauru — Republic of Nauru, Naoero</td>
+            <td></td>
+            <td>9378</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Republic of Palau</td>
+            <td>English: Palau, Belau</td>
+            <td>Ngerulmud</td>
+            <td>21032</td>
+            <td>459</td>
+          </tr>
+          <tr>
+            <td>Papua New Guinea</td>
+            <td>English: Papua New Guinea, Papua Niugini</td>
+            <td>Port Moresby</td>
+            <td>6310129</td>
+            <td>462840</td>
+          </tr>
+          <tr>
+            <td>Samoa</td>
+            <td>English: Samoa — Independent State of Samoa</td>
+            <td>Apia</td>
+            <td>194320</td>
+            <td>2831</td>
+          </tr>
+          <tr>
+            <td>Solomon Islands</td>
+            <td>English: Solomon Islands</td>
+            <td>Honiara</td>
+            <td>584578</td>
+            <td>28896</td>
+          </tr>
+          <tr>
+            <td>Tonga</td>
+            <td>English: Tonga — Kingdom of Tonga</td>
+            <td>Nukuʻalofa</td>
+            <td>106146</td>
+            <td>747</td>
+          </tr>
+          <tr>
+            <td>Tuvalu</td>
+            <td>English: Tuvalu</td>
+            <td>Funafuti</td>
+            <td>10619</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Vanuatu</td>
+            <td>Bislama: Vanuatu — Ripablik blong Vanuatu</td>
+            <td>Port Vila</td>
+            <td>256155</td>
+            <td>12189</td>
+          </tr>
+          <tr>
+            <td>Cook Islands</td>
+            <td>English: Cook Islands, Kūki 'Āirani</td>
+            <td>Avarua</td>
+            <td>11124</td>
+            <td>236</td>
+          </tr>
+          <tr>
+            <td>Niue</td>
+            <td>Niuean: Niuē</td>
+            <td>Alofi</td>
+            <td>1311</td>
+            <td>260</td>
+          </tr>
+          <tr>
+            <td>American Samoa</td>
+            <td>English: American Samoa, Amerika Sāmoa</td>
+            <td>Pago Pago</td>
+            <td>67242</td>
+            <td>199</td>
+          </tr>
+          <tr>
+            <td>Easter Island</td>
+            <td>Spanish: Isla de Pascua, Rapa Nui</td>
+            <td>Hanga Roa</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>French Polynesia</td>
+            <td>French: Polynésie française — Pays d'outre-mer de la Polynesie Francaise</td>
+            <td>Papeete</td>
+            <td>294935</td>
+            <td>4167</td>
+          </tr>
+          <tr>
+            <td>Guam</td>
+            <td>English: Guam — Territory of Guam, Guahan</td>
+            <td>Hagåtña, Agaña</td>
+            <td>183286</td>
+            <td>544</td>
+          </tr>
+          <tr>
+            <td>Juan Fernández Islands</td>
+            <td>Spanish: Archipiélago Juan Fernández</td>
+            <td>San Juan Bautista</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>New Caledonia</td>
+            <td>French: Nouvelle-Calédonie — Territoire des Nouvelle-Caledonie et Dependances</td>
+            <td>Nouméa</td>
+            <td>256275</td>
+            <td>18575</td>
+          </tr>
+          <tr>
+            <td>Norfolk Island</td>
+            <td>English: Norfolk Island, Norfuk Ailen</td>
+            <td>Kingston</td>
+            <td>2169</td>
+            <td>36</td>
+          </tr>
+          <tr>
+            <td>Northern Mariana Islands</td>
+            <td>English: Northern Mariana Islands, Islas Mariånas</td>
+            <td>Saipan</td>
+            <td>46050</td>
+            <td>464</td>
+          </tr>
+          <tr>
+            <td>Pitcairn Islands</td>
+            <td>English: Pitcairn Islands — Pitcairn, Henderson, Ducie and Oeno Islands</td>
+            <td>Adamstown</td>
+            <td>48</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <td>Tokelau</td>
+            <td>Tokelauan: Tokelau</td>
+            <td>Each Atoll</td>
+            <td>1384</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Wallis and Futuna</td>
+            <td>French: Wallis et Futuna — Territoire des Iles Wallis et Futuna</td>
+            <td>Mata-Utu</td>
+            <td>15398</td>
+            <td>142</td>
+          </tr>
+          <tr>
+            <td>Bolivia</td>
+            <td>Spanish: Bolivia — Estado Plurinacional de Bolivia</td>
+            <td>Sucre, La Paz</td>
+            <td>10118683</td>
+            <td>1098581</td>
+          </tr>
+          <tr>
+            <td>Ecuador</td>
+            <td>Spanish: Ecuador — República del Ecuador</td>
+            <td>Quito</td>
+            <td>15007343</td>
+            <td>283561</td>
+          </tr>
+          <tr>
+            <td>Guyana</td>
+            <td>English: Guyana — Co-operative Republic of Guyana</td>
+            <td>Georgetown</td>
+            <td>744768</td>
+            <td>214969</td>
+          </tr>
+          <tr>
+            <td>Falkland Islands</td>
+            <td>English: Falkland Islands</td>
+            <td>Stanley</td>
+            <td>3140</td>
+            <td>12173</td>
+          </tr>
+          <tr>
+            <td>South Georgia and the South Sandwich Islands</td>
+            <td>English: South Georgia and the South Sandwich Islands</td>
+            <td>King Edward Point</td>
+            <td>0</td>
+            <td>3903</td>
+          </tr>
+          <tr>
+            <td>Antigua and Barbuda</td>
+            <td>Antigua and Barbuda</td>
+            <td>St. John's</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Barbados</td>
+            <td>Barbados</td>
+            <td>Bridgetown</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Belize</td>
+            <td>Belize</td>
+            <td>Belmopan</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Cuba</td>
+            <td>Republic of Cuba</td>
+            <td>Havana</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Dominica</td>
+            <td>Commonwealth of Dominica</td>
+            <td>Roseau</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Dominican Republic</td>
+            <td>República Dominicana</td>
+            <td>Santo Domingo</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>El Salvador</td>
+            <td>Republic of El Salvador</td>
+            <td>San Salvador</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Grenada</td>
+            <td>Grenada</td>
+            <td>St. George's</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Guatemala</td>
+            <td>Republic of Guatemala</td>
+            <td>Guatemala</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Haiti</td>
+            <td>Republic of Haiti</td>
+            <td>Port-au-Prince</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Honduras</td>
+            <td>Republic of Honduras</td>
+            <td>Tegucigalpa</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Nicaragua</td>
+            <td>Republic of Nicaragua</td>
+            <td>Managua</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Saint Kitts and Nevis</td>
+            <td>Federation of Saint Kitts and Nevis</td>
+            <td>Basseterre</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Saint Lucia</td>
+            <td>Saint Lucia</td>
+            <td>Castries</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Saint Vincent and the Grenadines</td>
+            <td>Saint Vincent and the Grenadines</td>
+            <td>Kingstown</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Trinidad and Tobago</td>
+            <td>Republic of Trinidad and Tobago</td>
+            <td>Port of Spain</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Anguilla</td>
+            <td>Anguilla</td>
+            <td>The Valley</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Bajo Nuevo</td>
+            <td>Bajo Nuevo</td>
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Bermuda</td>
+            <td>Bermuda Islands</td>
+            <td>Hamilton</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>British Virgin Islands</td>
+            <td>Virgin Islands</td>
+            <td>Road Town</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Montserrat</td>
+            <td>Montserrat</td>
+            <td>Plymouth</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Navassa Island</td>
+            <td>Navassa Island</td>
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Serranilla</td>
+            <td>Bajo Serranilla</td>
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Turks and Caicos Islands</td>
+            <td>Turks and Caicos Islands</td>
+            <td>Cockburn Town</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Aruba</td>
+            <td>Aruba</td>
+            <td>Oranjestad</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Bonaire</td>
+            <td>Bonaire, Boneiru</td>
+            <td>Kralendijk</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Clipperton Island</td>
+            <td>Clipperton Island, Île de la Passion</td>
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Curaçao</td>
+            <td>Land Curaçao, Pais Kòrsou</td>
+            <td>Willemstad</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Greenland</td>
+            <td>Greenlandic: Kalaallit Nunaat, Grønland</td>
+            <td>Nuuk</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Saba</td>
+            <td>Saba</td>
+            <td>The Bottom</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Saint Martin</td>
+            <td>Collectivity of Saint Martin</td>
+            <td>Marigot</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Saint Pierre and Miquelon</td>
+            <td>Territorial Collectivity of Saint Pierre and Miquelon</td>
+            <td>Saint-Pierre</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>San Andrés and Providencia</td>
+            <td>Archipelago of San Andrés, Providencia and Santa Catalina</td>
+            <td>San Andrés</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Sint Eustatius</td>
+            <td>Sint Eustatius, Statia</td>
+            <td>Oranjestad</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Sint Maarten</td>
+            <td>Eilandgebied Sint Maarten</td>
+            <td>Philipsburg</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Vatican City</td>
+            <td>Italian: Città del Vaticano — Stato della Città del Vaticano, Latin: Sancta Sedes</td>
+            <td>Vatican City</td>
+            <td>842</td>
+            <td>44</td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Логотип -->
+      <div class="footer-column">
+        <img src="./img/Fauget.png" alt="Логотип" class="footer-logo" />
+      </div>
+
+      <!-- Навігація -->
+      <div class="footer-column">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">MAPS SHOP</a></li>
+          <li><a href="#">OUR PROJECTS</a></li>
+          <li><a href="mission.html">OUR MISSION</a></li>
+          <li><a href="aboud.html">ABOUT US</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!-- Соцмережі + пошта -->
+      <div class="footer-column">
+        <h5>Contact</h5>
+        <p><i class="fas fa-envelope"></i> info@transnavi.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

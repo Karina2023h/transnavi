@@ -1,0 +1,346 @@
+/* HEADER */
+
+header {
+  background: linear-gradient(90deg, #ffffff 24%, #3a64ed 100%);
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #041d70;
+}
+
+.search-icon {
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.search-icon:hover {
+  transform: scale(1.2);
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 80px;
+}
+
+/* Стилі для dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+
+  left: 0;
+  background-color: #4248ea;
+  padding: 10px 0;
+  display: none;
+  flex-direction: column;
+  min-width: 250px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Показуємо меню при наведенні */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* MAIN */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  /* повна ширина вікна */
+  height: 99vh;
+  /* висота секції, менша за повний екран */
+  overflow: hidden;
+
+}
+
+.hero-video {
+  width: 100vw;
+  /* відео на всю ширину вікна */
+  height: auto;
+  /* висота підлаштовується пропорційно */
+  max-height: 100%;
+  /* не виходить за межі по висоті */
+  object-fit: cover;
+}
+
+/*  */
+
+.intro-section {
+  margin: 40px;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.benefits-list li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #444;
+}
+
+.benefits-list li strong {
+  color: #000;
+}
+
+.promo-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0004ff;
+  /* гарний зелений відтінок для акценту */
+  margin-bottom: 10px;
+}
+
+.promo-price span {
+  font-size: 1.5rem;
+  color: #ff0000;
+  /* контрастний колір для ціни */
+}
+
+.intro-section small {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+
+.maps-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.section-title {
+  font-size: 38px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0004ff;
+  border-bottom: 3px solid #0004ff;
+  padding-bottom: 8px;
+  color: #000000;
+}
+
+.table-container {
+  max-height: 900px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.maps-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.maps-table thead {
+  background-color: #454545;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.maps-table th,
+.maps-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #7c7979;
+}
+
+.maps-table tbody tr:hover {
+  background-color: #e0f2f1;
+}
+
+.link {
+  color: #263dd3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.maps-table th:nth-child(1) {
+  width: 150px;
+  /* Назва */
+}
+
+.maps-table th:nth-child(2) {
+  width: 320px;
+  /* Local short and formal Name */
+}
+
+.maps-table th:nth-child(3) {
+  width: 220px;
+  /* Capital */
+}
+
+.maps-table th:nth-child(4) {
+  width: 100px;
+  /* Population */
+}
+
+.maps-table th:nth-child(5) {
+  width: 100px;
+  /* Area, sq km */
+}
+
+/* FUTER */
+
+.site-footer {
+  background: linear-gradient(90deg, #ffffff 20%, #06268f 100%);
+  color: #fff;
+  padding: 20px 40px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+
+  width: 240px;
+}
+
+.footer-column h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.footer-column ul li a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 16px !important;
+}
+
+.footer-column ul li a:hover {
+  color: #000;
+}
+
+.footer-column p {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 21px;
+  color: #ffffff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #000;
+}
