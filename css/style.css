@@ -45,19 +45,20 @@ header {
 }
 
 .about-transnavicom {
-  margin: 60px auto;
-  padding: 20px;
+  margin: auto;
+  padding: 40px;
   max-width: 1300px;
 }
 
 .about-transnavicom h2 {
 
   font-size: 48px;
-  color: #000000;
   text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px #c2c2c2;
+  color: #000000;
+  padding-top: 60px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+
 
 }
 
@@ -282,7 +283,10 @@ body::before {
 
 .benefits-list li strong {
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
+
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .promo-price {
@@ -323,7 +327,7 @@ body::before {
 }
 
 .benefits-list li i {
-  color: #000000;
+  color: #0164ff;
   margin-right: 10px;
   margin-top: 4px;
   flex-shrink: 0;
@@ -420,11 +424,11 @@ body::before {
 
 .about-transnavicom {
   background: linear-gradient(135deg, #f9f9f9, #e6f0ff);
-  padding: 60px 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
   color: #111;
   max-width: 1300px;
-  margin: 50px auto;
+
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 64, 128, 0.1);
 }
@@ -569,5 +573,361 @@ body::before {
 .footer-column p a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+
+}
+
+
+/*  */
+
+main h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #000000;
+  padding-top: 60px;
+  text-transform: uppercase;
+}
+
+section.activity-block {
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 64, 128, 0.1);
+  line-height: 1.6;
+}
+
+section.activity-block h2 {
+  color: #007acc;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-bottom: 3px solid #007acc;
+  padding-bottom: 8px;
+}
+
+section.activity-block p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+section.activity-block ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.activity-block ul {
+  list-style: none;
+  /* прибираємо стандартні буліти */
+  padding-left: 0;
+  margin-bottom: 14px;
+}
+
+.activity-block ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #444;
+  list-style: none;
+}
+
+.activity-block ul li::before {
+  content: "\f00c";
+  /* Unicode для галочки Font Awesome */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  /* щоб була solid */
+  position: absolute;
+  list-style: none;
+  left: 0;
+  top: 0;
+  color: black;
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+/* contact */
+
+.contact-section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px;
+  color: #222;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #000000;
+  padding-top: 60px;
+  text-transform: uppercase;
+}
+
+.contact-section p {
+  font-size: 21px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-info p {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #004080;
+  margin-bottom: -9px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #004080;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #004080;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #202020;
+}
+
+/*  */
+
+.competitive-advantages {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px;
+  color: #222;
+}
+
+.competitive-advantages h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #000000;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.competitive-advantages p {
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #333;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.advantages-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgb(0 64 128 / 0.15);
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.advantages-table thead tr {
+  background-color: #004080;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.advantages-table th,
+.advantages-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #1c1c1c;
+  vertical-align: middle;
+}
+
+.advantages-table tbody tr:hover {
+  background-color: #e9f0fb;
+}
+
+/* Для мобільних */
+@media (max-width: 768px) {
+  .advantages-table thead {
+    display: none;
+  }
+
+  .advantages-table,
+  .advantages-table tbody,
+  .advantages-table tr,
+  .advantages-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .advantages-table tr {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #004080;
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+
+  .advantages-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+  }
+
+  .advantages-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    padding-left: 15px;
+    font-weight: 700;
+    text-align: left;
+    color: #004080;
+  }
+}
+
+/* mision */
+
+.our-mission {
+  padding: 50px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  font-family: 'Orbitron', sans-serif;
+  max-width: 1300px;
+  margin: 60px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-mission::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 5px;
+  background: linear-gradient(to right, #0d00ff, #03549b, #021078);
+  animation: slide-bar 4s linear infinite;
+}
+
+@keyframes slide-bar {
+  0% {
+    left: -50%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.our-mission h2 {
+  font-size: 48px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #c2c2c2;
+}
+
+.our-mission p {
+  font-size: 20px;
+  margin-bottom: 5px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.our-mission strong {
+  color: #0051ff;
+}
+
+.our-mission ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 30px;
+}
+
+.our-mission li {
+  background: rgba(243, 243, 243, 0.676);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 23px;
+  box-shadow: 0 10px 19px rgba(19, 19, 19, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.our-mission li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.our-mission li i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+  color: #0048ff;
+}
+
+.our-mission .highlight {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-top: 40px;
 
 }
