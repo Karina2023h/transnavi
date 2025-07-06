@@ -304,7 +304,7 @@ body::before {
 }
 
 .footer-column h5 {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 15px;
   color: #000000;
 }
@@ -315,11 +315,13 @@ body::before {
 }
 
 
+
 .footer-column ul li a {
   color: #000000;
   text-decoration: none;
   transition: color 0.3s;
   font-size: 16px !important;
+
 }
 
 .footer-column ul li a:hover {
@@ -336,6 +338,7 @@ body::before {
   display: inline-block;
   margin-right: 10px;
   font-size: 21px;
+
   color: #ffffff;
   transition: transform 0.3s, color 0.3s;
 }
