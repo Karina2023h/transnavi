@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transnavicom Electronic Maps</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./img/Fauget – копія1.png" type="image/png">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./img/Fauget.png" alt="Логотип" />
+      </a>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html">MAPS SHOP</a>
+      <a href="projects.html">OUR PROJECTS</a>
+      <a href="mission.html">OUR MISSION</a>
+      <div class="dropdown">
+        <a href="aboud.html" class="dropdown-toggle">ABOUT US</a>
+        <div class="dropdown-menu">
+          <a href="Areas.html">Areas of activity</a>
+          <a href="Competitive.html">Competitive advantages</a>
+        </div>
+      </div>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <div class="search-icon">
+      <i class="fas fa-search"></i>
+    </div>
+  </header>
+
+  <section class="product-section" style="padding: 40px 20px; background-color: #f9f9f9;">
+    <div class="product-grid" id="productGrid"
+      style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+      <!-- Product Card -->
+      <div class="product-card"
+        style=" text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/310/183/h_f962ada0e3c7a5b86d1f90304185605a" alt="Orthodox Map"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Orthodox map of Ukraine</h3>
+        <p style="font-size: 15px; color: #555;">The Transnavicom company, with the support of the Pilgrimage Center
+          under the Department of External Church Relations of
+          the Ukrainian Orthodox Church, has developed a new unique product for residents of Ukraine, as well as guests
+          and
+          pilgrims of our country – the “Orthodox Map of Ukraine”</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_59.jpg" alt="Business Map Collection"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Electronic Business Cards. Collection (Deluxe, 15 CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention a collection of disks "Electronic business
+          maps" - a series of electronic guides to the
+          cities of Ukraine for personal computers and laptops. The gift version is a collection of the best programs in
+          a
+          presentable bright package.</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/310/183/h_afdc5b41e639650b9c18f55b760c5520"
+          alt="Road Map Ukraine" style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Road Map of Ukraine (v2.0)</h3>
+        <p style="font-size: 15px; color: #555;">New map of Ukrainian highways with European numbering.
+          New administrative-territorial division of Ukraine.
+          New database of Ukrainian enterprises - more than 41,000, with the ability to search by type of activity.
+          The "search for settlements" function has been expanded - when searching, the district and region of the
+          settlement aredisplayed.</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_24.jpg" alt="Tourist Map Ukraine"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Tourist Map of Ukraine (v2.0)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention a new version of the Big Tourist Guide on
+          CD "Transnavicom Tourist Map of Ukraine".
+          The program contains a catalog of specialized maps that reveals the rich tourist potential of Ukraine,
+          presents the most
+          interesting tourist routes, castles, monasteries, fortresses, museums, parks, recreation areas - everything
+          that the
+          Ukrainian land is rich in.</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_27.jpg" alt="Kyiv and Region Map"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Kyiv and the region</h3>
+        <p style="font-size: 15px; color: #555;">For the first time, the suburbs of Brovary, Boryspil, Vyshneve,
+          Sofievskaya and Petropavlivska Borshahivka have been
+          added to the detailed map of Kyiv, with details down to each house. The database contains more than 35,000
+          companies in
+          the city and region. The routes of all types of public transport have been updated: buses, trams,
+          trolleybuses, and
+          fixed-route taxis. The data on the automobile route has been updated, taking into account new road signs and
+          interchanges.</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_22.jpg" alt="Ukraine and Crimea Map"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Ukraine and Crimea (v5.0)</h3>
+        <p style="font-size: 15px; color: #555;">The programs "Transnavicom Electronic Map" are the most detailed and
+          most popular guides to the cities of Ukraine today!
+          Fast and pleasant work with the programs, convenient and useful functions, a database of enterprises,
+          accessibility -
+          made these programs daily assistants for both a business person and an ordinary user!</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_115.gif" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">The best gift for a traffic police inspector</h3>
+        <p style="font-size: 15px; color: #555;">Dedicated to all traffic police officers!
+          What happens to you when you see a traffic police inspector on the road?...
+          Now you can confidently talk to the guardians of order on the roads knowing how to do it!
+          BONUS: in the insert you will find 10 tips on how to communicate with a traffic police inspector (everyone
+          needs to
+          know).
+          Help the inspector maintain the honor of the uniform - give this CD!</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_76.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Road map of Donetsk + Makeyevka + Gorlovka</h3>
+        <p style="font-size: 15px; color: #555;">For the first time, Makeyevka and Gorlovka have been added to the
+          detailed map of Donetsk! Fast movement and scaling of
+          maps, search by street names and house numbers, the ability to simultaneously display a selected number of
+          streets,
+          exact house addresses or district boundaries on the map are available.
+          Using this program, you can: plot a car route taking into account interchanges and directions of travel, plan
+          complex
+          routes taking into account the required number of intermediate addresses, save and maintain a list of plotted
+          routes.</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_31.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Moscow and the region</h3>
+        <p style="font-size: 15px; color: #555;">The new version of the product includes two disks with city and region
+          maps. Pleasant design, used in popular printed
+          atlases, the entire administrative territory of the city and region. City map with details to each house, city
+          transport
+          routes (including fixed-route taxis), calculation of the shortest car route taking into account road signs,
+          printing of
+          any map fragment. Extensive databases of enterprises in Moscow and the Moscow region. Sold in Russia and
+          Ukraine!</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_25.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Dnepropetrovsk and the region
+        </h3>
+        <p style="font-size: 15px; color: #555;">This product contains two disks with a map of the city and region.
+          Extensive functionality and information content will
+          allow you to quickly find the desired object, plot a path between any number of points or measure the
+          distance. A
+          bright, accessible and multilingual interface, many functions and buttons will allow you to easily use this
+          product.</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_103.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Donetsk and the region</h3>
+        <p style="font-size: 15px; color: #555;">"Transnavicom Electronic Maps" are designed to solve the problems of
+          finding an address, an object, calculating the
+          optimal route by car and public transport. Scaling and movement are carried out instantly, the image moves at
+          the speed
+          of the cursor. An extensive database of more than 5,000 is connected to the map.</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_28.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Lviv and the region</h3>
+        <p style="font-size: 15px; color: #555;">"Transnavicom Electronic Maps of Lviv and the Region" is designed to
+          solve the problems of finding an address, an
+          object, calculating the optimal route by car and public transport. Scaling and movement are carried out
+          instantly, the
+          image moves at the speed of the cursor. An extensive database of enterprises in Lviv and the region is
+          connected to the
+          map. For the first time, more than 1,200 outdoor advertising objects are marked on the city map!</p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_29.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Odessa and the region</h3>
+        <p style="font-size: 15px; color: #555;">Transnavicom Electronic maps of Odessa and the region are designed to
+          solve the problems of finding an address, an
+          object, calculating the optimal route by car and public transport. Scaling and movement are carried out
+          instantly, the
+          image moves at the speed of the cursor. An extensive database of Odessa enterprises is connected to the map!
+        </p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_30.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Kharkov and the region</h3>
+        <p style="font-size: 15px; color: #555;">We offer you an electronic map of Kharkov and the region on 2 disks.
+          This product contains two disks, on which the map
+          of the city and the region is placed. Extensive functionality and information content will allow you to
+          quickly find the
+          desired object, plot a route between any number of points or measure the distance. The updated functionality
+          will allow
+          you to easily use this product.
+        </p>
+      </div>
+
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_81.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Vinnitsa and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Vinnytsia and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Vinnytsia, scale 1:10,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+
+      <!--  -->
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_87.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Zhitomir and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Zhitomir and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Zhitomir, scale 1:14,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_101.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Zaporozhye and Ukraine</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Zaporizhia and Ukraine (2CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On1CD: Detailed map of Zaporizhia, scale 1:10,000
+          On2CD: Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_97.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Ivano-Frankivsk and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Ivano-Frankivsk and Ukraine (2 on 1
+          CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On 1 CD: Detailed map of Ivano-Frankivsk, scale 1:14 000
+          and Electronic map of Ukraine, scale 1:1 000 000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_86.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Kirovograd and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Kirovograd and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Kirovograd, scale 1:20,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_80.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Lugansk and Ukraine</h3>
+        <p>We present to your attention the computer programs
+          Transnavicom Electronic maps of Lugansk and Ukraine (2CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          CD1: Detailed map of Lugansk, scale 1:25,000
+          CD2: Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_88.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Lutsk and Ukraine (2-on-1CD)
+        </h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Lutsk and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, can be used
+          on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Lutsk, scale 1:15,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_78.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Mariupol and Ukraine</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Mariupol and Ukraine (2CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          CD1: Detailed map of Mariupol, scale 1:25,000
+          CD2: Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_96.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Nikolaev and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Nikolaev and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On 1 CD: Detailed map of Nikolaev, scale 1:25,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_82.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Poltava and Ukraine (2-on-1CD)
+        </h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Poltava and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Poltava, scale 1:17,000 and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_92.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Rivne and Ukraine (2-on-1CD)
+        </h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Rivne and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On 1 CD: Detailed map of Rivne, scale 1:12,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_79.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Sevastopol and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Sevastopol and Ukraine.
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          On 1CD: Detailed map of Sevastopol with detailing down to the house, scale 1:10,000 and Electronic map of
+          Ukraine, scale
+          1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_100.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Simferopol and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Simferopol and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On 1 CD: Detailed map of Simferopol, scale 1:10,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_89.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Sumy and Ukraine (2-on-1CD)
+        </h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Sumy and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, can be used
+          on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Sumy, scale 1:17,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <!-- Product Card -->
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_93.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Ternopil and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Ternopil and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On 1 CD: Detailed map of Ternopil, scale 1:17,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_94.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Uzhgorod and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">The programs combine modern electronic maps and an up-to-date database
+          of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On 1CD: Detailed map of Uzhgorod, scale 1:14,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_98.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Kherson and Ukraine (2-on-1CD)
+        </h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Kherson and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On 1 CD: Detailed map of Kherson, scale 1:18,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_90.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Vinnitsa and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Vinnytsia and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Vinnytsia, scale 1:10,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_83.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Cherkasy and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Cherkasy and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises. can be used
+          on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Cherkasy, scale 1:15,000 and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_91.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Chernigov and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention the computer programs Transnavicom
+          Electronic maps of Chernigov and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises, and can be
+          used on both
+          desktop and laptop computers.
+          On 1 CD: Detailed map of Chernigov, scale 1:15,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+
+      <div class="product-card"
+        style="text-align: center; background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="https://www.transnavi.com/netcat_files/203_95.jpg" alt="Gift for Traffic Inspectors"
+          style="width: auto; border-radius: 10px; margin-bottom: 15px;">
+        <h3 style="font-size: 20px; margin-bottom: 10px;">Transnavicom Electronic maps of Chernivtsi and Ukraine
+          (2-on-1CD)</h3>
+        <p style="font-size: 15px; color: #555;">We present to your attention computer programs Transnavicom
+          Electronic maps of Chernivtsi and Ukraine (2 on 1 CD).
+          The programs combine modern electronic maps and an up-to-date database of Ukrainian enterprises.
+          The program can be used on both desktop and laptop computers.
+          On 1 CD: Detailed map of Chernivtsi, scale 1:20,000
+          and Electronic map of Ukraine, scale 1:1,000,000</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <div id="pagination" style="text-align:center; margin: 30px 0;"></div>
+
+
+
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Логотип -->
+      <div class="footer-column">
+        <img src="./img/Fauget.png" alt="Логотип" class="footer-logo" />
+      </div>
+
+      <!-- Навігація -->
+      <div class="footer-column">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">MAPS SHOP</a></li>
+          <li><a href="projects.html">OUR PROJECTS</a></li>
+          <li><a href="mission.html">OUR MISSION</a></li>
+          <li><a href="aboud.html">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <!-- Соцмережі + пошта -->
+      <div class="footer-column">
+        <h5>Contact</h5>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info@transnavi.com">info@transnavi.com</a></p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const itemsPerPage = 12;
+      const productCards = document.querySelectorAll(".product-card");
+      const totalPages = Math.ceil(productCards.length / itemsPerPage);
+      const paginationContainer = document.getElementById("pagination");
+
+      function showPage(page) {
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+
+        productCards.forEach((card, index) => {
+          card.style.display = index >= start && index < end ? "block" : "none";
+        });
+
+        renderPagination(page);
+      }
+
+      function renderPagination(currentPage) {
+        paginationContainer.innerHTML = "";
+
+        for (let i = 1; i <= totalPages; i++) {
+          const btn = document.createElement("button");
+          btn.textContent = i;
+          btn.style.margin = "0 5px";
+          btn.style.padding = "5px 12px";
+          btn.style.border = "1px solid #ccc";
+          btn.style.borderRadius = "5px";
+          btn.style.backgroundColor = i === currentPage ? "#555" : "#eee";
+          btn.style.color = i === currentPage ? "#fff" : "#000";
+          btn.style.cursor = "pointer";
+
+          btn.addEventListener("click", () => showPage(i));
+
+          paginationContainer.appendChild(btn);
+        }
+      }
+
+      showPage(1); // Стартуємо з першої сторінки
+    });
+  </script>
+</body>
+
+</html>
