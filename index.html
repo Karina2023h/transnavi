@@ -37,15 +37,67 @@
       </div>
       <a href="contact.html">CONTACT</a>
     </nav>
-    <div class="search-icon">
-      <i class="fas fa-search"></i>
-    </div>
-    <div id="searchModal" class="search-modal">
-      <div class="search-modal-content">
-        <input type="text" id="citySearchInput" placeholder="Search..." />
-        <button onclick="performCitySearch()">Search</button>
+    <style>
+      .search-container {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .search-icon {
+        cursor: pointer;
+        user-select: none;
+        font-size: 20px;
+        margin-left: 6px;
+        color: #333;
+      }
+
+      #searchForm {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background: white;
+        padding: 6px 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        white-space: nowrap;
+      }
+
+      #citySearchInput {
+        width: 250px;
+        padding: 6px 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      /* Іконка пошуку у формі */
+      #submitSearch {
+        cursor: pointer;
+        font-size: 18px;
+        color: #555;
+        background: transparent;
+        border: none;
+        margin-left: 8px;
+      }
+    </style>
+
+    <div class="search-container">
+      <div class="search-icon" aria-label="Toggle search form" role="button" tabindex="0">
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div id="searchForm" role="search">
+        <input id="citySearchInput" type="text" placeholder="Enter search query" aria-label="Search input" />
+        <button id="submitSearch" aria-label="Perform search">
+          <i class="fas fa-search"></i>
+        </button>
       </div>
     </div>
+
+
+
 
   </header>
 
