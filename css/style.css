@@ -1299,3 +1299,50 @@ section.activity-block ul {
 .next {
   right: 20px;
 }
+
+
+.thumbnails-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 8px;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.thumbnails img {
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 10;
+}
+
+.nav-left {
+  left: 0;
+}
+
+.nav-right {
+  right: 0;
+}
+
+.nav-btn.hidden {
+  display: none;
+}
+
+/* Lightbox стилі можна додати окремо, якщо треба */

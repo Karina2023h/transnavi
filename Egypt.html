@@ -838,76 +838,37 @@
   </header>
 
   <main class="container">
-    <!-- Картка товару -->
-    <div class="product-wrapper d-flex flex-wrap gap-5 mt-5">
+
+
+    <div class="product-wrapper">
+      <!-- Галерея -->
       <div class="gallery">
         <img id="mainImage" class="main-image" src="./img/Screenshots/entire.png" alt="Main Image"
           onclick="openLightbox()">
-        <div class="thumbnails d-flex gap-2 mt-3">
-          <img src="./img/Screenshots/entire.png" onclick="updateMainImage(0)">
-          <img src="./img/Screenshots/1288.png" onclick="updateMainImage(1)">
-          <img src="./img/Screenshots/1289.png" onclick="updateMainImage(2)">
-          <img src="./img/Screenshots/1589.png" onclick="updateMainImage(3)">
-          <img src="./img/Screenshots/779.png" onclick="updateMainImage(4)">
+
+        <div class="thumbnails-wrapper">
+          <button class="nav-btn nav-left hidden" onclick="scrollThumbnails(-1)">&#10094;</button>
+          <div class="thumbnails" id="thumbnails">
+            <img src="./img/Screenshots/entire.png" onclick="updateMainImage(0)" class="active">
+            <img src="./img/Screenshots/1288.png" onclick="updateMainImage(1)">
+            <img src="./img/Screenshots/1289.png" onclick="updateMainImage(2)">
+            <img src="./img/Screenshots/1589.png" onclick="updateMainImage(3)">
+            <img src="./img/Screenshots/779.png" onclick="updateMainImage(4)">
+            <img src="./img/Screenshots/1289.png" onclick="updateMainImage(5)">
+            <img src="./img/Screenshots/1589.png" onclick="updateMainImage(6)">
+            <img src="./img/Screenshots/779.png" onclick="updateMainImage(7)">
+          </div>
+          <button class="nav-btn nav-right hidden" onclick="scrollThumbnails(1)">&#10095;</button>
         </div>
-
       </div>
 
-      <!-- Lightbox -->
-      <div id="lightbox" class="lightbox">
-        <span class="close" onclick="closeLightbox()">&times;</span>
-        <img id="lightboxImage" class="lightbox-content">
-        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
-        <span class="next" onclick="changeSlide(1)">&#10095;</span>
-      </div>
-
-      <script>
-        const images = [
-          './img/Screenshots/entire.png',
-          './img/Screenshots/1288.png',
-          './img/Screenshots/1289.png',
-          './img/Screenshots/1589.png',
-          './img/Screenshots/779.png'
-        ];
-
-        let currentSlide = 0;
-
-        function updateMainImage(index) {
-          document.getElementById('mainImage').src = images[index];
-          currentSlide = index; // <- це найважливіше!
-        }
-
-
-        function openLightbox() {
-          document.getElementById('lightbox').style.display = 'block';
-          document.getElementById('lightboxImage').src = images[currentSlide];
-        }
-
-
-        function closeLightbox() {
-          document.getElementById('lightbox').style.display = 'none';
-        }
-
-        function changeSlide(direction) {
-          currentSlide += direction;
-          if (currentSlide < 0) currentSlide = images.length - 1;
-          if (currentSlide >= images.length) currentSlide = 0;
-          document.getElementById('lightboxImage').src = images[currentSlide];
-        }
-
-      </script>
-
-
-
-
-      <div class="product-details" style="text-align: center; ">
+      <!-- Деталі товару і форма -->
+      <div style="text-align: center;" class="product-details">
         <h1>Egypt</h1>
-        <strong style="font-size: 20px;">Detailed dataset for Egypt and Cities</strong>
-        <!-- Контактна форма -->
+        <strong style="font-size: 20px; text-align: center;">Detailed dataset for Egypt and Cities</strong>
+        <p>To place an order, please fill out the form</p>
 
-        <p> To place an order, please fill out the form</p>
-
-        <form class="contact-form" action="send.php" method="post" style="max-width: 600px; margin-top: -20px;">
+        <form class="contact-form" action="send.php" style="width:600px;" method="post">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name" required />
 
@@ -922,6 +883,97 @@
 
           <button type="submit">Send Message</button>
         </form>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <img id="lightboxImage" class="lightbox-content">
+      <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+      <span class="next" onclick="changeSlide(1)">&#10095;</span>
+    </div>
+
+    <script>
+      const images = [
+        './img/Screenshots/entire.png',
+        './img/Screenshots/1288.png',
+        './img/Screenshots/1289.png',
+        './img/Screenshots/1589.png',
+        './img/Screenshots/779.png',
+        './img/Screenshots/1289.png',
+        './img/Screenshots/1589.png',
+        './img/Screenshots/779.png'
+      ];
+
+      let currentSlide = 0;
+
+      function updateMainImage(index) {
+        currentSlide = index;
+        document.getElementById('mainImage').src = images[index];
+        updateActiveThumbnail();
+      }
+
+      function updateActiveThumbnail() {
+        const thumbs = document.querySelectorAll('#thumbnails img');
+        thumbs.forEach((thumb, i) => {
+          thumb.classList.toggle('active', i === currentSlide);
+        });
+      }
+
+      function openLightbox() {
+        document.getElementById('lightbox').style.display = 'block';
+        document.getElementById('lightboxImage').src = images[currentSlide];
+      }
+
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+      }
+
+      function changeSlide(direction) {
+        currentSlide += direction;
+        if (currentSlide < 0) currentSlide = images.length - 1;
+        if (currentSlide >= images.length) currentSlide = 0;
+        document.getElementById('lightboxImage').src = images[currentSlide];
+        updateMainImage(currentSlide);
+      }
+
+      // Навігація по thumbnails
+      const thumbnails = document.getElementById('thumbnails');
+      const navLeft = document.querySelector('.nav-left');
+      const navRight = document.querySelector('.nav-right');
+
+      // Ширина однієї мініатюри + відступ (приблизно)
+      const thumbWidth = 108;
+
+      let maxScroll;
+      let scrollPosition = 0;
+
+      function updateNavVisibility() {
+        if (images.length > 5) {
+          navLeft.classList.remove('hidden');
+          navRight.classList.remove('hidden');
+          maxScroll = (images.length - 5) * thumbWidth;
+        } else {
+          navLeft.classList.add('hidden');
+          navRight.classList.add('hidden');
+          thumbnails.style.transform = 'translateX(0)';
+          scrollPosition = 0;
+        }
+      }
+
+      function scrollThumbnails(direction) {
+        scrollPosition += direction * thumbWidth;
+        if (scrollPosition < 0) scrollPosition = 0;
+        if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+        thumbnails.style.transform = `translateX(-${scrollPosition}px)`;
+      }
+
+      // Ініціалізація при завантаженні сторінки
+      updateNavVisibility();
+      updateActiveThumbnail();
+    </script>
+
 
 
 
