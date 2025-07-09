@@ -1216,7 +1216,16 @@ section.activity-block ul {
 }
 
 
-#toggleCitiesBtn1,
+#toggleCitiesBtn1 {
+  margin-top: 10px;
+  padding: 10px 40px;
+  border: none;
+  background-color: #160575;
+  color: white;
+  font-size: 21px;
+  cursor: pointer;
+}
+
 #toggleCitiesBtn2 {
   margin-top: 10px;
   padding: 10px 40px;
