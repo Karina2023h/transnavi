@@ -226,7 +226,7 @@
   <header>
     <div class="logo">
       <a href="index.html">
-        <img src="./img/Fauget.png" alt="Логотип" />
+        <img src="./img/photo_2025-07-09_13-08-16.jpg" alt="Логотип" />
       </a>
     </div>
 
@@ -252,293 +252,232 @@
     <!-- Картка товару -->
     <div class="product-wrapper d-flex flex-wrap gap-5 mt-5">
       <div class="gallery">
-        <img id="mainImage" class="main-image" src="./img/Screenshots/entire.png" alt="Main Image">
+        <img id="mainImage" class="main-image" src="./img/Screenshots/entire.png" alt="Main Image"
+          onclick="openLightbox()">
+
+
+
         <div class="thumbnails d-flex gap-2 mt-3">
-          <img src="./img/Screenshots/1288.png" onclick="document.getElementById('mainImage').src=this.src">
-          <img src="./img/Screenshots/1289.png" onclick="document.getElementById('mainImage').src=this.src">
-          <img src="./img/Screenshots/1589.png" onclick="document.getElementById('mainImage').src=this.src">
-          <img src="./img/Screenshots/779.png" onclick="document.getElementById('mainImage').src=this.src">
+          <img src="./img/Screenshots/entire.png" onclick="updateMainImage(0)">
+          <img src="./img/Screenshots/1288.png" onclick="updateMainImage(1)">
+          <img src="./img/Screenshots/1289.png" onclick="updateMainImage(2)">
+          <img src="./img/Screenshots/1589.png" onclick="updateMainImage(3)">
+          <img src="./img/Screenshots/779.png" onclick="updateMainImage(4)">
         </div>
+
       </div>
 
-      <div class="product-details">
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImage" class="lightbox-content">
+        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="next" onclick="changeSlide(1)">&#10095;</span>
+      </div>
+
+      <script>
+        const images = [
+          './img/Screenshots/entire.png',
+          './img/Screenshots/1288.png',
+          './img/Screenshots/1289.png',
+          './img/Screenshots/1589.png',
+          './img/Screenshots/779.png'
+        ];
+
+        let currentSlide = 0;
+
+        function updateMainImage(index) {
+          document.getElementById('mainImage').src = images[index];
+          currentSlide = index; // <- це найважливіше!
+        }
+
+
+        function openLightbox() {
+          document.getElementById('lightbox').style.display = 'block';
+          document.getElementById('lightboxImage').src = images[currentSlide];
+        }
+
+
+        function closeLightbox() {
+          document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function changeSlide(direction) {
+          currentSlide += direction;
+          if (currentSlide < 0) currentSlide = images.length - 1;
+          if (currentSlide >= images.length) currentSlide = 0;
+          document.getElementById('lightboxImage').src = images[currentSlide];
+        }
+
+      </script>
+
+
+
+
+      <div class="product-details" style="text-align: center; ">
         <h1>Egypt</h1>
-        <p>Please find brief statistics concerning the digital map of the country and its major cities.</p>
-        <strong>Promo price: just $1000 for the map of any city!</strong>
-        <p>All the maps are supplied with the Standard or Premium set of layers. If you are interested in purchasing a
-          map, or if you have any questions, please do not hesitate to contact us
-          the way
-          you prefer:</p>
-      </div>
-    </div>
+        <strong style="font-size: 20px;">Detailed dataset for Egypt and Cities</strong>
+        <!-- Контактна форма -->
 
-    <!-- Таблиця шарів -->
-    <div class="map-layers-section mt-5">
-      <h2 class="text-center mb-5">All the maps are supplied with the Standard or Premium set of layers</h2>
-      <div class="layers-columns">
+        <p> To place an order, please fill out the form</p>
 
-        <!-- Standard Block -->
-        <div class="layer-block standard-block">
-          <h3>Standard</h3>
-          <ul>
-            <li><span class="icon available">✔️</span> Regions: Countries, Cities, Buildings, BUA, Hydrography</li>
-            <li><span class="icon available">✔️</span> Polylines: Road Network, Railroad, Hydrography</li>
-            <li><span class="icon available">✔️</span> Points: City Center, Address, Road Network Nodes</li>
-            <li><span class="icon available">✔️</span> Geographical Names, Infrastructure Objects</li>
-            <li><span class="icon not-available">✖️</span> All signs, navigational maneuvers, POI, Business Listing</li>
-            <li><span class="icon not-available">✖️</span> Type, Class, Speed, Pavement, Lane Connections</li>
-            <li><span class="icon not-available">✖️</span> Relief & Building's Height, 3D Models</li>
-          </ul>
-        </div>
+        <form class="contact-form" action="send.php" method="post" style="max-width: 600px; margin-top: -20px;">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
 
-        <!-- Premium Block -->
-        <div class="layer-block premium-block">
-          <h3>Premium</h3>
-          <ul>
-            <li><span class="icon available">✔️</span> Regions: Countries, Cities, Buildings, BUA, Hydrography</li>
-            <li><span class="icon available">✔️</span> Polylines: Road Network, Railroad, Hydrography</li>
-            <li><span class="icon available">✔️</span> Points: City Center, Address, Road Network Nodes</li>
-            <li><span class="icon available">✔️</span> Geographical Names, Infrastructure Objects</li>
-            <li><span class="icon available">✔️</span> All signs, navigational maneuvers, POI, Business Listing</li>
-            <li><span class="icon available">✔️</span> Type, Class, Speed, Pavement, Lane Connections</li>
-            <li><span class="icon available">✔️</span> Relief & Building's Height, 3D Models</li>
-          </ul>
-        </div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" required />
 
-      </div>
-    </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="message">Comment</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
 
 
-    <!-- Міста -->
-    <div class="cities-section mt-5">
-      <h2>Short statistics for most important cities with detailed coverage</h2>
-      <p><strong>Name English:</strong> CAIRO,
-        GIZA,
-        ALEXANDRIA,
-        QALYOUBIA,
-        HELWAN,
-        EL MAHALLA EL KOUBRA,
-        MANSOURA,
-        TANTA,
-        SIXTH OF OCTOBER,
-        EL SUEZ,
-        MADINET SHBIN EL KOOM,
-        EL QAHERA EL GIDIDAA,
-        BANHA,
-        QALYOUB,
-        ZEFTA,
-        DESOUQ,
-        MADINAT EL MATAREYAH,
-        PORT SAID,
-        ISMAILIA,
-        QEWASNA,
-        MADINAT BIYALA,
-        KAFR EL SHEIKH,
-        MADENET EL ASHER MEN RAMDAN,
-        EL SHIKH ZAID,
-        MADINET MENOUF,
-        ASHMOUN,
-        MADINAT FOWA,
-        MADINAT KAFR EL ZAYAT,
-        SERS EL LAYAN,
-        MADINAT DUMIAT EL GIDIDAA,
-        EL SINBELAWAYN,
-        SAMANOUD,
-        DUMIAT,
-        MADINAT BELQAS,
-        MIT GHAMR,
-        EL SHOHADA,
-        MADINAT EL MANZALAH,
-        FARASKOUR,
-        TALA,
-        EL BAGOUR,
-        EL RIYAD,
-        SHBIN EL QANATER,
-        EL QANATER EL KHAYREYAH,
-        AGA,
-        EL SADAT,
-        LUXOR,
-        KAFR SHOKR,
-        SHERBEEN,
-        QAHA,
-        MET SALSABEL,
-        TOKH,
-        KAFR EL BATEKH,
-        EL KOURDY,
-        PORT FOUAD,
-        MADINAT QILLIN,
-        MADINAT RAS EL BAR,
-        METOBAS,
-        BALTEEM,
-        NABAROUH,
-        BANI EBAID,
-        MADINAT EL BAYADYAH,
-        MADINAT EL RAWDA,
-        SABARBAY,
-        BERKET EL SABAA,
-        MADINAT EL ZARQA,
-        MADINAT EL GAMALEYAH,
-        EL SIYALAA,
-        EL HAMOOL,
-        MIT ABO GHALEB,
-        MADINAT SIDI SALEM,
-        MADINAT MENYET EL NASR,
-        DEKERNES,
-        TAMY EL AMDID,
-        MADINAT BORG EL ARAB EL GADIDA,
-        MADINAT EL SARW,
-        ABU SWEER,
-        GAMASA,
-        ZAQAZEQ,
-        EL SANTA,
-        EL QANTRA SHARK,
-        EL SHOUBAK EL SHARQIAH,
-        EL QANTRA GHARB,
-        ABU ATWA,
-        BASYOUN,
-        QOUTOUR,
-        BATINAH,
-        EL TAL EL KEBEER,
-        MADENET BELBES,
-        DAMANHOUR,
-        MANIET SANDOUB,
-        KAFR SAAD,
-        EL MENIA,
-        ASYOUT,
-        FAKOOS,
-        ASWAN,
-        EL FAYOUM,
-        SOHAG,
-        BANI SUEIF,
-        EL BAQASHEN,
-        MADINET ABO KABEAR,
-        QENA,
-        HURGHADA,
-        WERWARA,
-        MANIA EL KAMH
-      </p>
-      <p><strong>Name Local:</strong>القاهرة,
-        الجيزة,
-        الاسكندرية,
-        القليوبية,
-        حلوان1,
-        المحلة الكبرى,
-        المنصورة,
-        طنطا,
-        السادس من اكتوبر,
-        السويس,
-        مدينة شبين الكوم,
-        القاهرة الجديدة,
-        بنها,
-        قليوب,
-        زفتى,
-        دسوق,
-        مدينة المطريه,
-        بورسعيد,
-        الاسماعيلية,
-        قويسنا,
-        مدينة بيلا,
-        كفر الشيخ,
-        مدينة العاشر من رمضان,
-        الشيخ زايد,
-        مدينة منوف,
-        اشمون,
-        مدينة فوه,
-        مدينة كفر الزيات,
-        سرس الليان,
-        مدينة دمياط الجديدة,
-        السنبلاوين,
-        سمنود,
-        دمياط,
-        مدينة بلقاس,
-        ميت غمر,
-        الشهداء,
-        مدينة المنزله,
-        فارسكور,
-        تلا,
-        الباجور,
-        الرياض,
-        شبين القناطر,
-        القناطر الخيرية,
-        أجا,
-        السادات,
-        الاقصر,
-        كفر شكر,
-        شربين,
-        قها,
-        ميت سلسبيل,
-        طوخ,
-        كفر البطيخ,
-        الكردي,
-        بورفؤاد,
-        مدينة قلين,
-        مدينة رأس البر,
-        مطوبس,
-        بلطيم,
-        نبروه,
-        بني عبيد,
-        مدينة البياضية,
-        مدينة الروضة,
-        سبرباى,
-        بركة السبع,
-        مدينة الزرقا,
-        مدينة الجمالية,
-        السيالة,
-        الحامول,
-        ميت ابو غالب,
-        سيدي سالم,
-        مدينة منية النصر,
-        دكرنس,
-        تمي الامديد,
-        مدينة برج العرب الجديدة,
-        مدينة السرو,
-        أبو صوير,
-        جمصة,
-        الزقازيق,
-        السنطه,
-        القنطرة شرق,
-        الشوبك الشرقية,
-        القنطرة غرب,
-        ابو عطوة,
-        بسيون,
-        قطور,
-        بطينة,
-        التل الكبير,
-        مدينة بلبيس,
-        دمنهور,
-        منية سندوب,
-        كفر سعد,
-        المنيا,
-        أسيوط,
-        فاقوس,
-        أسوان,
-        الفيوم,
-        سوهاج,
-        بني سويف,
-        البقاشين,
-        مدينة ابو كبير,
-        قنا,
-        الغردقة,
-        ورواره,
-        منيا القمح</p>
-    </div>
 
-    <!-- Контактна форма -->
-    <div class="contact-form mt-5">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" class="form-control mb-3" placeholder="Your Name" required>
-        <input type="email" class="form-control mb-3" placeholder="Your Email" required>
-        <textarea class="form-control mb-3" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn btn-warning">Send Message</button>
-      </form>
-    </div>
   </main>
+  <div class="group-all">
+    <div class="button-group">
+      <button class="tab-button active" onclick="showTab('description')">Description</button>
+      <button class="tab-button" onclick="showTab('coverage')">Coverage</button>
+      <button class="tab-button" onclick="showTab('cities')">Cities</button>
+    </div>
+
+    <div id="description" class="tab-content active">
+      <p>Please find brief statistics concerning the digital map of the country and its major cities.</p>
+      <strong>Promo price: just $1000 for the map of any city!</strong>
+      <p>All the maps are supplied with the Standard or Premium set of layers. If you are interested in purchasing a
+        map, or if you have any questions, please do not hesitate to contact us
+        the way
+        you prefer:</p>
+    </div>
+    <div id="coverage" class="tab-content">
+      <p><strong style="font-size: 24px;">Short country statistics:</strong></p>
+      <p><strong>COVERAGE STATISTICS:</strong></p>
+
+      <div class="stat-group-title">General</div>
+      <div class="stat-line"><span>Data Set:</span> Egypt</div>
+      <div class="stat-line"><span>Coverage Area:</span> 1,116,694 sq km</div>
+
+      <div class="stat-group-title">Routing</div>
+      <div class="stat-line"><span>Routing Length:</span> 368,206 km</div>
+      <div class="stat-line"><span>Routing Nodes:</span> 2,993,461</div>
+      <div class="stat-line"><span>Routing Segments:</span> 4,173,309</div>
+      <div class="stat-line"><span>Labeled Segments:</span> 150,468</div>
+      <div class="stat-line"><span>Routing Restrictions:</span> 66,075</div>
+
+      <div class="stat-group-title">Objects</div>
+      <div class="stat-line"><span>Buildings:</span> 264,482</div>
+      <div class="stat-line"><span>Buildings with Heights:</span> 76,975</div>
+      <div class="stat-line"><span>Addresses:</span> 1,002,264</div>
+      <div class="stat-line"><span>Points of Interest (POI):</span> 632,339</div>
+    </div>
+
+    <div id="cities" class="tab-content">
+      <div class="cities-section mt-5">
+        <h4>Short statistics for most important cities with detailed coverage</h4>
+
+        <p><strong>Name English:</strong>
+          <span id="cities-en-short">
+            CAIRO, GIZA, ALEXANDRIA, QALYOUBIA, HELWAN...
+          </span>
+          <span id="cities-en-full" style="display: none;">
+            CAIRO, GIZA, ALEXANDRIA, QALYOUBIA, HELWAN, EL MAHALLA EL KOUBRA, MANSOURA, TANTA, SIXTH OF OCTOBER, EL
+            SUEZ,
+            MADINET SHBIN EL KOOM, EL QAHERA EL GIDIDAA, BANHA, QALYOUB, ZEFTA, DESOUQ, MADINAT EL MATAREYAH, PORT SAID,
+            ISMAILIA, QEWASNA, MADINAT BIYALA, KAFR EL SHEIKH, MADENET EL ASHER MEN RAMDAN, EL SHIKH ZAID, MADINET
+            MENOUF,
+            ASHMOUN, MADINAT FOWA, MADINAT KAFR EL ZAYAT, SERS EL LAYAN, MADINAT DUMIAT EL GIDIDAA, EL SINBELAWAYN,
+            SAMANOUD,
+            DUMIAT, MADINAT BELQAS, MIT GHAMR, EL SHOHADA, MADINAT EL MANZALAH, FARASKOUR, TALA, EL BAGOUR, EL RIYAD,
+            SHBIN EL
+            QANATER, EL QANATER EL KHAYREYAH, AGA, EL SADAT, LUXOR, KAFR SHOKR, SHERBEEN, QAHA, MET SALSABEL, TOKH, KAFR
+            EL
+            BATEKH, EL KOURDY, PORT FOUAD, MADINAT QILLIN, MADINAT RAS EL BAR, METOBAS, BALTEEM, NABAROUH, BANI EBAID,
+            MADINAT
+            EL BAYADYAH, MADINAT EL RAWDA, SABARBAY, BERKET EL SABAA, MADINAT EL ZARQA, MADINAT EL GAMALEYAH, EL
+            SIYALAA, EL
+            HAMOOL, MIT ABO GHALEB, MADINAT SIDI SALEM, MADINAT MENYET EL NASR, DEKERNES, TAMY EL AMDID, MADINAT BORG EL
+            ARAB
+            EL GADIDA, MADINAT EL SARW, ABU SWEER, GAMASA, ZAQAZEQ, EL SANTA, EL QANTRA SHARK, EL SHOUBAK EL SHARQIAH,
+            EL
+            QANTRA GHARB, ABU ATWA, BASYOUN, QOUTOUR, BATINAH, EL TAL EL KEBEER, MADENET BELBES, DAMANHOUR, MANIET
+            SANDOUB,
+            KAFR SAAD, EL MENIA, ASYOUT, FAKOOS, ASWAN, EL FAYOUM, SOHAG, BANI SUEIF, EL BAQASHEN, MADINET ABO KABEAR,
+            QENA,
+            HURGHADA, WERWARA, MANIA EL KAMH
+          </span>
+        </p>
+
+        <p><strong>Name Local:</strong>
+          <span id="cities-local-short">
+            القاهرة, الجيزة, الاسكندرية, القليوبية, حلوان...
+          </span>
+          <span id="cities-local-full" style="display: none;">
+            القاهرة, الجيزة, الاسكندرية, القليوبية, حلوان1, المحلة الكبرى, المنصورة, طنطا, السادس من اكتوبر, السويس,
+            مدينة
+            شبين الكوم, القاهرة الجديدة, بنها, قليوب, زفتى, دسوق, مدينة المطريه, بورسعيد, الاسماعيلية, قويسنا, مدينة
+            بيلا, كفر
+            الشيخ, مدينة العاشر من رمضان, الشيخ زايد, مدينة منوف, اشمون, مدينة فوه, مدينة كفر الزيات, سرس الليان, مدينة
+            دمياط
+            الجديدة, السنبلاوين, سمنود, دمياط, مدينة بلقاس, ميت غمر, الشهداء, مدينة المنزله, فارسكور, تلا, الباجور,
+            الرياض,
+            شبين القناطر, القناطر الخيرية, أجا, السادات, الاقصر, كفر شكر, شربين, قها, ميت سلسبيل, طوخ, كفر البطيخ,
+            الكردي,
+            بورفؤاد, مدينة قلين, مدينة رأس البر, مطوبس, بلطيم, نبروه, بني عبيد, مدينة البياضية, مدينة الروضة, سبرباى,
+            بركة
+            السبع, مدينة الزرقا, مدينة الجمالية, السيالة, الحامول, ميت ابو غالب, سيدي سالم, مدينة منية النصر, دكرنس, تمي
+            الامديد, مدينة برج العرب الجديدة, مدينة السرو, أبو صوير, جمصة, الزقازيق, السنطه, القنطرة شرق, الشوبك
+            الشرقية,
+            القنطرة غرب, ابو عطوة, بسيون, قطور, بطينة, التل الكبير, مدينة بلبيس, دمنهور, منية سندوب, كفر سعد, المنيا,
+            أسيوط,
+            فاقوس, أسوان, الفيوم, سوهاج, بني سويف, البقاشين, مدينة ابو كبير, قنا, الغردقة, ورواره, منيا القمح
+          </span>
+        </p>
+
+        <button id="toggleCitiesBtn" onclick="toggleCitiesList()">More +</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function toggleCitiesList() {
+      const enFull = document.getElementById('cities-en-full');
+      const localFull = document.getElementById('cities-local-full');
+      const enShort = document.getElementById('cities-en-short');
+      const localShort = document.getElementById('cities-local-short');
+      const btn = document.getElementById('toggleCitiesBtn');
+
+      const isHidden = enFull.style.display === 'none';
+
+      enFull.style.display = isHidden ? 'inline' : 'none';
+      localFull.style.display = isHidden ? 'inline' : 'none';
+      enShort.style.display = isHidden ? 'none' : 'inline';
+      localShort.style.display = isHidden ? 'none' : 'inline';
+
+      btn.textContent = isHidden ? 'Hide –' : 'More +';
+    }
+
+  </script>
+
+
+
+
+
+
 
   <footer class="site-footer mt-5 bg-dark text-white py-4">
     <div class="container d-flex justify-content-between flex-wrap">
       <div class="footer-column">
-        <img src="./img/Fauget.png" alt="Логотип" class="footer-logo" />
+        <a href="index.html">
+          <img src="./img/photo_2025-07-09_13-08-16.jpg" class="footer-logo" alt="Логотип" />
+        </a>
       </div>
       <div class="footer-column">
         <h5>Navigation</h5>
@@ -573,6 +512,7 @@
     </div>
   </div>
   <script src="./js/script.js"></script>
+  <script src="./js/script1.js"></script>
 </body>
 
 </html>
