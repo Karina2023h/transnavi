@@ -557,7 +557,7 @@
     </div>
   </section>
 
-  <div id="pagination" style="text-align:center; margin: 30px 0;"></div>
+
 
 
 
@@ -598,47 +598,7 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const itemsPerPage = 12;
-      const productCards = document.querySelectorAll(".product-card");
-      const totalPages = Math.ceil(productCards.length / itemsPerPage);
-      const paginationContainer = document.getElementById("pagination");
 
-      function showPage(page) {
-        const start = (page - 1) * itemsPerPage;
-        const end = start + itemsPerPage;
-
-        productCards.forEach((card, index) => {
-          card.style.display = index >= start && index < end ? "block" : "none";
-        });
-
-        renderPagination(page);
-      }
-
-      function renderPagination(currentPage) {
-        paginationContainer.innerHTML = "";
-
-        for (let i = 1; i <= totalPages; i++) {
-          const btn = document.createElement("button");
-          btn.textContent = i;
-          btn.style.margin = "0 5px";
-          btn.style.padding = "5px 12px";
-          btn.style.border = "1px solid #ccc";
-          btn.style.borderRadius = "5px";
-          btn.style.backgroundColor = i === currentPage ? "#555" : "#eee";
-          btn.style.color = i === currentPage ? "#fff" : "#000";
-          btn.style.cursor = "pointer";
-
-          btn.addEventListener("click", () => showPage(i));
-
-          paginationContainer.appendChild(btn);
-        }
-      }
-
-      showPage(1); // Стартуємо з першої сторінки
-    });
-  </script>
 </body>
 
 </html>
